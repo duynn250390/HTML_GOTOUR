@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+
+    <!-- MyStyle CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean" rel="stylesheet">
+    <link href="public/css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <header class="main_header" id="showPopUp">
+        <div class="container_dis">
+            <div class="box_navbar_main">
+                <div class="box_menu_respontive_ovelay" id="box_menu_respontive_ovelay"></div>
+                <div class="box_menu_respontive" id="box_menu_respontive">
+                    <div class="header_menu_repo">
+                        <div class="info_header">
+                            <figure class="main_thumb">
+                                <img src="public/images/share/avata_member.png" alt="avataMem">
+                            </figure>
+                            <div class="information_mem">
+                                <!-- <h4 class="name_mem">홍길동 님</h4> -->
+                                <ul class="control_login">
+                                    <li><a href="">로그인</a></li>
+                                    <li><a href="">회원가입</a></li>
+                                </ul>
+                                <ul class="control_mem">
+                                    <li><a href="">예매확인</a></li>
+                                    <li><a href="">위시리스트</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="control_close" id="control_close"></span>
+                    </div>
+                    <div class="box_menu_HTML" id="box_menu_HTML"></div>
+                </div>
+                <div class="control_respon_left">
+                    <div class="bullet_back" id="bullet_back"></div>
+                    <div class="bullet_menu" id="bullet_menu"></div>
+                </div>
+                <div class="box_brand">
+                    <a href="" class="stlogo onpc"></a>
+                </div>
+                <div class="collapse_navbar" id="collapse_navbar">
+                    <ul class="navbar_main">
+                        <li class="item_menu" id="showModal1" data-toggle="ModalTongle1">
+                            <a href="javascript: void(0)">Modal1</a>
+                        </li>
+                        <li class="item_menu " id="showModal2" data-toggle="ModalTongle2">
+                            <a href="javascript: void(0)">Modal2</a>
+                        </li>
+                        <li class="item_menu " id="showModal3" data-toggle="ModalTongle3">
+                            <a href="javascript: void(0)">Modal3</a>
+                        </li>
+                        <li class="item_menu " id="showModal4" data-toggle="ModalTongle4">
+                            <a href="javascript: void(0)">Modal4</a>
+                        </li>
+                        <li class="item_menu " id="showModal5" data-toggle="ModalTongle5">
+                            <a href="javascript: void(0)">Modal5</a>
+                        </li>
+                        <li class="item_menu " id="showModal6" data-toggle="ModalTongle6">
+                            <a href="javascript: void(0)">Modal6</a>
+                        </li>
+                        <li class="item_menu " id="showModal7" data-toggle="ModalTongle7">
+                            <a href="javascript: void(0)">Modal7</a>
+                        </li>
+                        <li class="item_menu " id="showModal8" data-toggle="ModalTongle8">
+                            <a href="javascript: void(0)">Modal8</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box_search_in_header show_box_search " id="box_search_in_header">
+                    <img src="public/images/icon/icon_search_top.png">
+                </div>
+            </div>
+        </div>
+        <div class="box_search animated" id="box_search">
+            <div class="container_dis">
+                <div class="form_box_search">
+                    <!-- <div class="form_control_search"> -->
+                    <form method="GET" class="form_control_search">
+                        <div class="input_box">
+                            <input type="text" class="control_input" name="keySearch" id="control_input" />
+                            <span class="clear_text" id="clear_text"></span>
+                        </div>
+                        <div class="name_action_box">
+                            <button class="action_search">Search</button>
+                        </div>
+                    </form>
+                    <!-- </div> -->
+                    <div class="for_auto_suggestion">
+                        <div class="title_auto">인기 검색어</div>
+                        <ul class="list_key">
+                            <li><a href="">박보검</a></li>
+                            <li><a href="">TWICE</a></li>
+                            <li><a href="">BTS</a></li>
+                            <li><a href="">박보검</a></li>
+                            <li><a href="">홍길동</a></li>
+                            <li><a href="">서울공연</a></li>
+                            <li><a href="">검색어</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!-- main_header -->
+    <aside class="content_main_father" id="content_main_father">
+        <section class="content_login respoMenu">
+            <div class="container_dis">
+                <div class="box_main_sign">
+                    <div class="sign_control_form">
+                        <div class="box_form_login">
+                            <div class="main_header_sign">
+                                <h4 class="heading_title">회원 로그인</h4>
+                            </div>
+                            <div class="main_body">
+                                <form method="POST">
+                                    <div class="box_group_control">
+                                        <div class="box_form">
+                                            <span class="icon_name label01"></span>
+                                            <input type="text" class="control_full" placeholder="이메일">
+                                        </div>
+                                        <div class="box_form">
+                                            <span class="icon_pass label01"></span>
+                                            <input type="password" class="control_full" placeholder="비밀번호">
+                                        </div>
+                                    </div>
+                                    <div class="control_bottom">
+                                        <button class="action_login">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="box_footer_control">
+                            <ul class="control_sig">
+                                <li>
+                                    <a href="">비밀번호 찾기</a>
+                                </li>
+                                <li>
+                                    <a href="">Email로 가입하기</a>
+                                </li>
+                            </ul>
+                            <div class="login_social">
+                                <h3 class="main_heading">SNS 계정으로 로그인</h3>
+                                <ul class="social_list">
+                                    <li><a href=""><img src="public/images/icon/icon_social01.png"></a></li>
+                                    <li><a href=""><img src="public/images/icon/icon_social02.png"></a></li>
+                                    <li><a href=""><img src="public/images/icon/icon_social03.png"></a></li>
+                                    <li><a href=""><img src="public/images/icon/icon_social04.png"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </aside>
+    <div class="popup zuzuModal effect_opcity fade" id="ModalTongle1">
+        <div class="dialog_modal modal_md">
+            <div class="box_modal_content">
+                <span class="action_cancel closeModel" id="action_cancel"></span>
+                <div class="modal_header">
+                    <div class="main_heading">Alert</div>
+                </div>
+                <div class="modal_body">Content</div>
+                <div class="modal_footer">Footer</div>
+            </div>
+        </div>
+    </div>
+    <!-- ModalTongle1 -->
+    <div class="popup zuzuModal effect_opcity fade" id="ModalTongle2">
+        <div class="dialog_modal modal_md">
+            <div class="box_modal_content thobao02">
+                <span class="action_cancel closeModel" id="action_cancel"></span>
+                <div class="modal_body">
+                    상품 주문이 완료되었습니다.
+                </div>
+                <div class="modal_footer">
+                    <button class="btn_control colGreen">주문내역 보기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ModalTongle2 -->
+    <div class="popup zuzuModal effect_opcity fade" id="ModalTongle3">
+        <div class="dialog_modal modal_md">
+            <div class="box_modal_content thobao03">
+                <span class="action_cancel closeModel" id="action_cancel"></span>
+                <div class="modal_header">
+                    <div class="main_heading">Alert</div>
+                </div>
+                <div class="modal_body">
+                    <div class="box_tb_id">
+                        ID를 찾을 수가 없습니다.<br />
+                        회원가입을 해주세요.
+                    </div>
+                </div>
+                <div class="modal_footer">
+                    <button class="btn_control closeModel colGray">Cancel</button>
+                    <button class="btn_control colGreen">Okie</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ModalTongle3 -->
+    <div class="popup zuzuModal effect_opcity fade" id="ModalTongle4">
+        <div class="dialog_modal modal_md">
+            <div class="box_modal_content thobao04">
+                <span class="action_cancel closeModel" id="action_cancel"></span>
+                <div class="modal_header">
+                    <div class="main_heading">Alert</div>
+                </div>
+                <div class="modal_body">
+                    <div class="box_tb_id_notical">
+                        ID를 찾을 수가 없습니다.<br />
+                        회원가입을 해주세요.
+                    </div>
+                </div>
+                <div class="modal_footer">
+                    <button class="btn_control colYello">About</button>
+                    <button class="btn_control closeModel colGray">Cancel</button>
+                    <button class="btn_control colGreen">Okie</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ModalTongle4 -->
+    <div class="popup zuzuModal effect_opcity fade" id="ModalTongle5">
+        <div class="dialog_modal modal_md">
+            <div class="box_modal_content thobao04">
+                <span class="action_cancel closeModel" id="action_cancel"></span>
+                <div class="modal_header">
+                    <div class="main_heading">Alert</div>
+                </div>
+                <div class="modal_body">
+                    <div class="box_tb_id_notical">
+                        로그인을 해주세요.
+                    </div>
+                </div>
+                <div class="modal_footer">
+                    <button class="btn_control closeModel colGray">Cancel</button>
+                    <button class="btn_control colGreen">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ModalTongle5 -->
+    <footer class="main_footer">
+        <div class="container_dis">
+            <div class="footer_top">
+                <div class="info_box_footer">
+                    <ul class="menu_footer">
+                        <li><a href="">정보 처리 방침</a></li>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">이용약관</a></li>
+                    </ul>
+                    <ul class="info_bot">
+                        <li>100-864 서울시 중구 태평로2가 69-15 덕제빌딩 502 호</li>
+                        <li>Tel: 02-777-0442</li>
+                        <li>Fax: 02-777-0443</li>
+                        <li>E-mail: gotour777@hotmail.com</li>
+                    </ul>
+                </div>
+                <div class="box_social">
+                    <ul>
+                        <li class="fb"><a href="">facebook</a></li>
+                        <li class="tw"><a href="">twicter</a></li>
+                        <li class="bulet"><a href="">bullet</a></li>
+                        <li class="line"><a href="">line</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bot">
+            <p></p>
+            © 2019 Primarynet.co.kr. All rights reserved.
+        </div>
+    </footer><!-- main_footer -->
+    <!-- jQuery -->
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/slick.js"></script>
+    <script src="public/js/mquery.js"></script>
+</body>
+
+</html>
