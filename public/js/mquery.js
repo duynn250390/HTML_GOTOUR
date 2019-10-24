@@ -545,7 +545,6 @@ function timePick_day(){
     var box_grid_day = $('.box_grid_day');
     var item_day = $('.item_day');
     var width_box_grid_day = box_grid_day.width();
-    console.log(width_box_grid_day/7);
     item_day.css({
         'width': width_box_grid_day/7+'px',
         'height': width_box_grid_day/7+'px',
@@ -554,3 +553,6 @@ function timePick_day(){
         'width': width_box_grid_day/7+'px',
     });
 }
+$(document).on('click', '.close_icon', function () {
+    closeModal();
+});
