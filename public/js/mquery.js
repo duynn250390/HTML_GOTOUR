@@ -573,10 +573,12 @@ $(document).scroll(function () {
     if (scrollTop > top_bar) {
         $('.top_bar').css({
             'height': '0',
+            'overflow': 'hidden'
         });
     }else{
         $('.top_bar').css({
-            'height': '40px'
+            'height': '40px',
+            'overflow': 'visible'
         });
     }
 });
