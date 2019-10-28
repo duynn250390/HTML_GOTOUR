@@ -8,25 +8,29 @@ $(document).ready(function () {
     ShowAnser();
     Slide_article();
     timePick_day();
-    $('#list_item_box_news').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        dots: false,
-        arrows: true,
-        prevArrow: '<div class="slick_prev"></div>',
-        nextArrow: '<div class="slick_next"></div>',
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
+    var numItems = $('#list_item_box_news .item_slide').length;
+    if (numItems > 2) {
+        $('#list_item_box_news').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            dots: false,
+            arrows: true,
+            prevArrow: '<div class="slick_prev"></div>',
+            nextArrow: '<div class="slick_next"></div>',
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
                 }
-            }
-        ]
-    });
+            ]
+        });
+    }
+
     $('#main_box_slide_Item5').slick({
         infinite: true,
         slidesToShow: 5,
@@ -575,7 +579,7 @@ $(document).scroll(function () {
             'height': '0',
             'overflow': 'hidden'
         });
-    }else{
+    } else {
         $('.top_bar').css({
             'height': '40px',
             'overflow': 'visible'
