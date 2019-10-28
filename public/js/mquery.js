@@ -12,22 +12,22 @@ $(document).ready(function () {
     if (numItems > 2) {
         $('#list_item_box_news').slick({
             infinite: true,
-            slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             dots: false,
             arrows: true,
             prevArrow: '<div class="slick_prev"></div>',
             nextArrow: '<div class="slick_next"></div>',
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                    }
-                }
-            ]
+            // responsive: [
+            //     {
+            //         breakpoint: 768,
+            //         settings: {
+            //             slidesToShow: 1,
+            //             slidesToScroll: 1,
+            //             infinite: true,
+            //         }
+            //     }
+            // ]
         });
     }
 
