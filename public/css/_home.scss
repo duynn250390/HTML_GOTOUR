@@ -471,6 +471,7 @@
                 .heading_top {
                     @include fontSizeB1();
                     margin-bottom: 0.6em;
+                    min-height: 44px;
                     color: $col02;
                 }
 
@@ -988,6 +989,7 @@
 
                 .thumnail {
                     width: 33%;
+                    max-height: 260px;
                     overflow: hidden;
                     position: relative;
                     float: left;
@@ -1900,35 +1902,40 @@
                 }
             }
         }
-        .naver{
+
+        .naver {
             a {
                 &:after {
                     background-image: url('../images/icon/naver.png');
                 }
             }
         }
-        .soompi{
+
+        .soompi {
             a {
                 &:after {
                     background-image: url('../images/icon/soompi.png');
                 }
             }
         }
-        .youtube{
+
+        .youtube {
             a {
                 &:after {
                     background-image: url('../images/icon/youtube.png');
                 }
             }
         }
-        .kakao{
+
+        .kakao {
             a {
                 &:after {
                     background-image: url('../images/icon/kakao-talk.png');
                 }
             }
         }
-        .instagram{
+
+        .instagram {
             a {
                 &:after {
                     background-image: url('../images/icon/instagram.png');
