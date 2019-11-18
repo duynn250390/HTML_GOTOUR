@@ -15,6 +15,24 @@
         }
     }
 
+    .control_guild .box_list_guid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .item_guid {
+            width: 49.75%;
+            margin-bottom: 0.5%;
+
+
+
+            &:nth-child(2n+1) {
+                margin-right: 0.5%;
+
+            }
+        }
+    }
+
     .step_col .item_form .right_box_form {
         width: 100%;
     }
@@ -247,51 +265,14 @@
 
     .control_guild {
         .box_list_guid {
-            display: -ms-grid;
-            display: grid;
-            grid-gap: 10px;
-            -ms-grid-columns: 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
+            // display: -ms-grid;
+            // display: grid;
+            // grid-gap: 10px;
+            // -ms-grid-columns: 1fr 1fr;
+            // grid-template-columns: 1fr 1fr;
 
             // -ms-grid-rows: 1fr 1fr;
-            .item_guid {
-                &:nth-child(1) {
-                    -ms-grid-column: 1;
-                    -ms-grid-column-span: 1;
-                    -ms-grid-row: 1;
-                    grid-row: 1;
-                    margin-right: 5px;
-                    margin-bottom: 5px;
-                }
-
-                &:nth-child(2) {
-                    -ms-grid-column: 2;
-                    -ms-grid-column-span: 2;
-                    -ms-grid-row: 1;
-                    grid-row: 1;
-                    margin-left: 5px;
-                    margin-bottom: 5px;
-
-                }
-
-                &:nth-child(3) {
-                    -ms-grid-column: 1;
-                    -ms-grid-column-span: 1;
-                    -ms-grid-row: 2;
-                    grid-row: 2;
-                    margin-right: 5px;
-                    margin-top: 5px;
-                }
-
-                &:nth-child(4) {
-                    -ms-grid-column: 2;
-                    -ms-grid-column-span: 2;
-                    -ms-grid-row: 2;
-                    grid-row: 2;
-                    margin-left: 5px;
-                    margin-top: 5px;
-                }
-            }
+            .item_guid {}
         }
     }
 
@@ -454,6 +435,26 @@
 
 @media only screen and (max-width: 480px) and (-ms-high-contrast: none),
 (-ms-high-contrast: active) {
+
+
+    .control_guild .box_list_guid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .item_guid {
+            width: 100%;
+            margin-bottom: 0.5%;
+
+
+
+            &:nth-child(2n+1) {
+                margin-right: 0;
+
+            }
+        }
+    }
+
 
     .box_review_list .item_review {
         display: block;

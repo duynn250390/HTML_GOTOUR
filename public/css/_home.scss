@@ -3716,6 +3716,8 @@
 
 .top_bar {
     background: #f3f3f3;
+    // width: 100%;
+    // z-index: 9999;
     // overflow: hidden;
     @include tran_slow_03();
 
