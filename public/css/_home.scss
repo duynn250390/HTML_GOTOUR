@@ -661,7 +661,8 @@
             justify-content: center;
 
             .item_list {
-                margin-right: 8em;
+                // margin-right: 8em;
+                width: 20%;
                 @include tran_slow_03();
 
                 .item_control {
@@ -689,6 +690,13 @@
                         height: 90px;
                         object-fit: cover;
                         @include tran_slow_03();
+
+                        @include maxWidth(568px) {
+                            height: 40px;
+                        }
+                        @include maxWidth(480px) {
+                            height: 30px;
+                        }
                     }
                 }
 
@@ -698,6 +706,10 @@
                     font-weight: bold;
                     font-size: px2em(16);
                     @include tran_slow_03();
+
+                    @include maxWidth(480px) {
+                        font-size: px2em(14);
+                    }
                 }
 
                 &:hover,
@@ -718,23 +730,13 @@
                 .item_list {
                     margin-right: 6em;
 
-                    .img_top_thumb {
-                        img {
-                            height: 70px;
-                        }
-                    }
+                    
                 }
             }
 
             @include maxWidth(768px) {
                 .item_list {
                     margin-right: 3em;
-
-                    .img_top_thumb {
-                        img {
-                            height: 70px;
-                        }
-                    }
                 }
             }
 
@@ -742,11 +744,6 @@
                 .item_list {
                     margin-right: 2em;
 
-                    .img_top_thumb {
-                        img {
-                            height: 50px;
-                        }
-                    }
                 }
             }
 
@@ -755,7 +752,6 @@
                 flex-wrap: wrap;
 
                 .item_list {
-                    width: 50%;
                     margin-right: 0em;
                     margin-bottom: 2em;
 
@@ -763,11 +759,7 @@
                         margin-top: 0.5em;
                     }
 
-                    .img_top_thumb {
-                        img {
-                            height: 50px;
-                        }
-                    }
+
                 }
             }
         }
@@ -1867,6 +1859,12 @@
                     background-size: 18px;
                     border: 1px solid #fff;
                     background-position: center;
+
+                    @include maxWidth(480px) {
+                        width: 30px;
+                        height: 30px;
+                        background-size: 14px;
+                    }
                 }
             }
         }
