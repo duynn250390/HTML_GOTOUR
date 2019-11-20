@@ -157,9 +157,9 @@
     }
 
     .list_control {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
 
         .btn_control {
             padding: 0.5em 1em;
@@ -170,26 +170,16 @@
             align-items: center;
             justify-content: center;
             color: #333;
+            width: 30%;
+            margin-right: 1%;
+            margin-bottom: 1%;
             @include tran_slow_03();
 
             @include hofo() {
                 background: #E4E4E4;
                 color: #fff;
             }
-
-            &:nth-child(1) {
-                -ms-grid-column: 1;
-                margin-right: 10px;
-            }
-
-            &:nth-child(2) {
-                -ms-grid-column: 2;
-                margin-right: 10px;
-            }
-
-            &:nth-child(3) {
-                -ms-grid-column: 3;
-            }
+          
         }
     }
 
