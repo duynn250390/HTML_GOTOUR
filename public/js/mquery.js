@@ -443,6 +443,10 @@ function respon_menu() {
         var action = $(this).attr('data-toggle');
         ModalTongle(action);
     });
+    $(document).on('click', '#showModal6', function () {
+        var action = $(this).attr('data-toggle');
+        ModalTongle(action);
+    });
     $(document).on('click', '.closeModel', function () {
         closeModal();
     });
@@ -563,7 +567,6 @@ $(document).on('click', '.close_icon', function () {
 
 $(document).click(function () {
     $(".drop_down_menu").hide();
-
 });
 
 $(document).on('click', '.heaer_menu_drop .li_meu .aput_dorop', function (e) {

@@ -179,7 +179,7 @@
                 background: #E4E4E4;
                 color: #fff;
             }
-          
+
         }
     }
 
@@ -426,6 +426,11 @@
 @media only screen and (max-width: 480px) and (-ms-high-contrast: none),
 (-ms-high-contrast: active) {
 
+    .list_control {
+        .btn_control {
+            width: 48%;
+        }
+    }
 
     .control_guild .box_list_guid {
         display: flex;

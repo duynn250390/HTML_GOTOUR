@@ -2267,8 +2267,9 @@
                 height: 30px;
                 width: 30px;
                 position: absolute;
-                right: 0.5em;
-                top: 0.5em;
+                right: 0.9em;
+                top: 0.9em;
+                z-index: 996;
 
                 &:before {
                     cursor: pointer;
@@ -2276,8 +2277,8 @@
                     align-items: center;
                     content: '';
                     background-image: url('../images/icon/bullet_cancel.png');
-                    width: 24px;
-                    height: 24px;
+                    width: 30px;
+                    height: 30px;
                     background-size: 100%;
                     background-repeat: no-repeat;
                     @include tran_slow_03();
@@ -2300,7 +2301,7 @@
             }
 
             .modal_body {
-                // padding: 1em;
+                padding: 1em;
             }
 
             .modal_footer {}
@@ -2545,7 +2546,33 @@
         }
     }
 }
+.box_modal_content.thobao06 {
+    .modal_body {
+        .box_tb_id_notical {
+            color: #4B4B4B;
+            font-size: px2em(18);
+            line-height: 1.4;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
 
+            @include maxWidth(600px) {
+                font-size: px2em(16);
+            }
+
+            &:before {
+                display: flex;
+                margin-right: 1em;
+                content: '';
+                width: 50px;
+                height: 50px;
+                background-image: url('../images/icon/bullet004.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        }
+    }
+}
 .grid_class {
     display: grid;
     grid-template-columns: 1fr;
@@ -3178,13 +3205,13 @@
 .dialog_modal {
     .box_modal_content {
         .modal_header {
-            text-align: center;
+            text-align: left;
             position: relative;
-            border: none !important;
+            // border: none !important;
 
             .main_heading {
                 color: #3F65AE;
-                padding: 1em 2em;
+                // padding: 1em 2em;
             }
 
             .pre_icon,
