@@ -356,7 +356,10 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-
+            @include maxWidth(480px) {
+                flex-direction: column;
+                align-items: unset;
+            }
             .box_left {
                 flex-grow: 1;
                 display: flex;
@@ -364,7 +367,10 @@
                 align-items: center;
                 text-decoration: none;
                 outline: none;
-
+                @include maxWidth(480px) {
+                    flex-direction: column;
+                    align-items: unset;
+                }
                 &:before {
                     margin-right: 1em;
                     display: flex;
@@ -383,12 +389,17 @@
                         width: 30px;
                         background-size: 90%;
                     }
+                    @include maxWidth(480px) {
+                        margin-bottom: 1em;
+                    }
                 }
 
                 .body {
                     display: flex;
                     flex-direction: column;
-
+                    @include maxWidth(480px) {
+                        margin-bottom: 1em;
+                    }
                     .heading_ques {
                         color: #4B4B4B;
                         @include font18();
@@ -406,6 +417,10 @@
             }
 
             .box_right {
+                @include maxWidth(480px) {
+                    display: flex;
+                    justify-content: flex-end;
+                }
                 .ques_0 {
                     padding: 0.5em 1em;
                     @include borderRadius(6px);

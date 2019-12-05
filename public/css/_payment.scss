@@ -356,6 +356,7 @@
     .control_input {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         margin-top: 2em;
 
         @include maxWidth(375px) {
@@ -368,7 +369,7 @@
 
         .form_raceheck {
             margin-right: 6em;
-
+            margin-bottom: 0.5em;
             @include maxWidth(768px) {
                 margin-right: 4em;
             }

@@ -81,13 +81,14 @@
         @include tran_slow_03();
 
         @include maxWidth(420px) {
-            // flex-direction: column;
+            flex-direction: column;
         }
 
         .box_thumbnail_review {
             display: flex;
             margin-right: 1em;
             flex: 0 0 20%;
+            height: 240px;
             @include tran_slow_03();
 
             @include maxWidth(1200px) {
@@ -95,6 +96,9 @@
             }
             @include maxWidth(768px) {
                 flex: 0 0 24%;
+            }
+            @include maxWidth(420px) {
+                margin-right: 0;
             }
 
             // @include maxWidth(420px) {
@@ -301,7 +305,7 @@
 
                 .info {
                     display: flex;
-                    justify-content: center;
+                    justify-content: left;
                     color: $col08;
                     font-size: px2em(14);
                     margin-top: 0.5em;
