@@ -2718,6 +2718,13 @@
 }
 
 .timePickedM {
+    .dialog_modal .box_modal_content .modal_header{
+        text-align: center;
+    }
+    .close_icon{
+        right: 21px;
+        bottom: -30px;
+    }
     .modal_footer {
         display: flex;
         flex-direction: column;
@@ -2743,7 +2750,7 @@
                     width: 200px;
 
                     @include maxWidth(768px) {
-                        width: 140px;
+                        width: 215px;
                     }
                 }
 
