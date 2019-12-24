@@ -211,15 +211,19 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 0.5em 0;
+        padding: 0.5em 5px;
         @include tran_slow_03();
+
         @include maxWidth(980px) {
             border-bottom: 1px solid $col09;
         }
+
         @include maxWidth(768px) {
             grid-column: 10 span;
         }
-
+        &.active{
+            background: #edf3ff;
+        }
         &::before {
             margin-right: 1em;
             display: block;
@@ -244,6 +248,7 @@
             flex-direction: column;
             padding-left: 1em;
             border-left: 1px solid $col09;
+            @include calc(width, '100% - 30px');
 
             .title_main {
                 font-size: px2em(20);
@@ -454,20 +459,24 @@
             flex-direction: column;
             justify-content: center;
             padding: 0 5em;
-            @include maxWidth(768px){
+
+            @include maxWidth(768px) {
                 padding: 0 3em;
-            } 
-            @include maxWidth(480px){
+            }
+
+            @include maxWidth(480px) {
                 padding: 0 1em;
             }
+
             .main_thumb {
                 display: block;
                 width: 100%;
                 height: 100%;
                 position: relative;
                 padding-bottom: 66.67%;
-                @include maxWidth(768px){
-                }
+
+                @include maxWidth(768px) {}
+
                 img {
                     position: absolute;
                     top: 0;
@@ -483,11 +492,14 @@
                 text-align: center;
                 margin-top: 1em;
                 margin-bottom: 2em;
+
                 li {
                     margin-bottom: 0.5em;
-                    &:last-child{
+
+                    &:last-child {
                         margin-bottom: 0;
                     }
+
                     .in_head {
                         font-weight: 600;
                     }
@@ -502,10 +514,12 @@
         .box_right_thumb {
             display: flex;
             justify-content: center;
-            .btn_views{
+
+            .btn_views {
                 @include tran_slow_03();
                 width: 300px;
-                @include maxWidth(480px){
+
+                @include maxWidth(480px) {
                     width: 100%;
                 }
             }

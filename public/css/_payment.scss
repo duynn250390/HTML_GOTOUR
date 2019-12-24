@@ -105,6 +105,9 @@
         display: flex;
         flex-direction: row;
 
+        @include maxWidth(768px) {
+            flex-direction: column;
+        }
 
         .form_control {
             padding-top: 1em;
@@ -126,7 +129,7 @@
             }
 
             .heading {
-                flex: 0 0 15%;
+                flex: 0 0 20%;
                 font-size: px2em(18);
                 font-weight: bold;
 
@@ -370,6 +373,7 @@
         .form_raceheck {
             margin-right: 6em;
             margin-bottom: 0.5em;
+
             @include maxWidth(768px) {
                 margin-right: 4em;
             }
