@@ -1581,3 +1581,10 @@ span.label_noti {
         font-weight: 600;
     }
 }
+
+.agree_pay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 1em;
+}

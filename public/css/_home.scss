@@ -471,7 +471,7 @@
                 .heading_top {
                     @include fontSizeB1();
                     margin-bottom: 0.6em;
-                    min-height: 44px;
+                    height: 44px;
                     color: $col02;
                 }
 
@@ -1839,9 +1839,9 @@
         li {
             margin-bottom: 0.5em;
             margin-right: 1em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
 
             a {
                 text-indent: -9999px;
@@ -1851,6 +1851,7 @@
                 position: relative;
 
                 &:after {
+                    display: block;
                     content: '';
                     width: 35px;
                     height: 35px;
