@@ -75,6 +75,52 @@ $(document).ready(function () {
             }
         ]
     });
+    // $('#main_box_slide_m').slick({
+    //     infinite: true,
+    //     slidesToShow: 5,
+    //     slidesToScroll: 5,
+    //     autoplay: true,
+    //     autoplaySpeed: 20000,
+    //     dots: false,
+    //     arrows: false,
+    //     centerMode: true,
+    //     // prevArrow: '<div class="slick_prev"></div>',
+    //     // nextArrow: '<div class="slick_next"></div>',
+    //     responsive: [
+    //         {
+    //             breakpoint: 1024,
+    //             settings: {
+    //                 slidesToShow: 3,
+    //                 slidesToScroll: 3,
+    //                 infinite: true,
+    //             }
+    //         },
+
+    //         {
+    //             breakpoint: 980,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 2,
+    //                 infinite: true,
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 480,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 375,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1
+    //             }
+    //         }
+    //     ]
+    // });
+   
     $('#main_box_slide').slick({
         infinite: true,
         slidesToShow: 6,

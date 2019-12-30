@@ -401,6 +401,7 @@
                         margin-bottom: 1em;
                     }
                     .heading_ques {
+                        cursor: pointer;
                         color: #4B4B4B;
                         @include font18();
                         font-weight: 600;

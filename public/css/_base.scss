@@ -98,6 +98,21 @@ $col09:#ccc;
     overflow: hidden;
 }
 
+@mixin break_word($num_line, $line_height) {
+    word-wrap: break-word;
+    -webkit-line-clamp: $num_line;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    max-height: $line_height*$num_line + px;
+    line-height: $line_height + px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    white-space: normal;
+    word-break: break-all;
+}
+
 @mixin shadow_bottom {
     box-shadow: 0 0px 10px 0px rgba(190, 190, 190, 0.46);
     -webkit-box-shadow: 0 0px 10px 0px rgba(190, 190, 190, 0.46);
@@ -107,6 +122,7 @@ $col09:#ccc;
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
+
 @media (min-width:768px) {
     .container_dis {
         max-width: 100%
@@ -146,17 +162,20 @@ $col09:#ccc;
 .right {
     text-align: right;
 }
+
 @mixin calc($property, $expression) {
     #{$property}: -moz-calc(#{$expression});
     #{$property}: -webkit-calc(#{$expression});
     #{$property}: calc(#{$expression});
-  }
-  // TODO: Khoi RESPONTIVE MIN_WIDTH
+}
+
+// TODO: Khoi RESPONTIVE MIN_WIDTH
 @mixin minWidth($breakpoint) {
     @media only screen and (min-width: $breakpoint) {
         @content;
     }
 }
+
 // TODO: Khoi RESPONTIVE MAX_WIDTH 
 
 @mixin maxWidth($breakpoint) {
@@ -268,6 +287,14 @@ $base-font-size: 14;
 @mixin fontSizeY {
     font-size: 3.286em;
     // font-size: 46px;
+}
+
+@mixin gradianAA {
+    background: rgb(247,68,78);
+background: -moz-linear-gradient(236deg, rgba(247,68,78,1) 0%, rgba(63,101,174,1) 58%);
+background: -webkit-linear-gradient(236deg, rgba(247,68,78,1) 0%, rgba(63,101,174,1) 58%);
+background: linear-gradient(236deg, rgba(247,68,78,1) 0%, rgba(63,101,174,1) 58%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7444e",endColorstr="#3f65ae",GradientType=1);
 }
 
 @mixin gradianA {
@@ -735,7 +762,7 @@ input[type=range]:focus::-ms-fill-upper {
     text-decoration: none;
     outline: none;
     min-width: 240px;
-    border:none;
+    border: none;
     cursor: pointer;
     @include borderRadius(0);
     @include tran_slow_03();
@@ -745,10 +772,12 @@ input[type=range]:focus::-ms-fill-upper {
         background: $colMainH;
         color: #fff;
     }
-    @include maxWidth(768px){
+
+    @include maxWidth(768px) {
         height: 42px;
     }
-    @include maxWidth(480px){
+
+    @include maxWidth(480px) {
         height: 40px;
     }
 }

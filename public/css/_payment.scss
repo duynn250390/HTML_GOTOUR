@@ -39,7 +39,7 @@
 
             @include maxWidth(768px) {
                 padding: 0.5em;
-                font-size: px2em(12);
+                font-size: px2em(14);
             }
 
             .exten_money {
@@ -323,7 +323,7 @@
 
                 @include maxWidth(480px) {
                     padding: 1em 0.5em;
-                    font-size: px2em(12);
+                    // font-size: px2em(12);
                 }
 
                 .form_in {
