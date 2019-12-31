@@ -9,8 +9,42 @@ $(document).ready(function () {
         $(this).addClass('active');
         $('.post_list___tabs').removeClass('active');
         $('#active_tabs__' + data_tabs).addClass('active');
+    });
+    $(document).on('click', '#show_comment', function () {
+        $('#list_comment_qa').css({
+            'max-height': '1000px',
+            'overflow-y': 'visible'
+        });
+        $('.hide_comment').css({
+            'display': 'flex'
+        });
 
     });
+    $(document).on('click', '#hide_comment', function () {
+        $('#list_comment_qa').css({
+            'max-height': '0',
+            'overflow-y': 'hidden'
+        });
+        $(this).css({
+            'display': 'none'
+        });
+
+    });
+    $(document).on('click', '#nut_box li', function () {
+        $('#nut_box li').removeClass('on');
+        $(this).addClass('on');
+
+    });
+    if ($('.item_warap').length > 0) {
+        $(document).on('click', '.item_list', function () {
+            var data_tabs = $(this).attr('data-tabs');
+            console.log(data_tabs);
+            $('.item_list').removeClass('on');
+            $(this).addClass('on');
+            $('.item_warap').removeClass('on');
+            $('#item___warrap_' + data_tabs).addClass('on');
+        });
+    }
     if ($('.detail__container').length > 0) {
         var swiper = new Swiper('.detail__container', {
             pagination: {

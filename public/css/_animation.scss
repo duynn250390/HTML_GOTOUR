@@ -16,6 +16,8 @@
     -webkit-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
 }
 
 @mixin shawdow_sum {
@@ -30,6 +32,22 @@
     -moz-border-radius: $val;
     -ms-border-radius: $val;
     -o-border-radius: $val;
+}
+
+@mixin tran($time) {
+    transition: $time all;
+    -webkit-transition: $time all;
+    -moz-transition: $time all;
+    -o-transition: $time all;
+    -ms-transition: $time all;
+}
+
+@mixin tran_val_time($val, $time) {
+    transition: $val $time ease-out;
+    -webkit-transition: $val $time ease-out;
+    -moz-transition: $val $time ease-out;
+    -ms-transition: $val $time ease-out;
+    -o-transition: $val $time ease-out;
 }
 
 @mixin tran($time) {
@@ -559,5 +577,3 @@
         -o-transform: translate3d(0, 10%, 0);
     }
 }
-
-
