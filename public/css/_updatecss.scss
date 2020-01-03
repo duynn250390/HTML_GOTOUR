@@ -2292,3 +2292,14 @@
 .ed_bar_top .main_content.respoMenu {
     padding-top: 100px;
 }
+
+.box__top_info {
+    .sum__info {
+        .info_day {
+            &::before {
+                background: url(../images/icon/icon___date.png) no-repeat;
+                background-size: 100%;
+            }
+        }
+    }
+}
