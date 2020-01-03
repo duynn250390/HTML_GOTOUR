@@ -67,10 +67,10 @@ $(document).ready(function () {
             slidesPerView: 1,
             centeredSlides: true,
             spaceBetween: ($(window).width() - (($(window).width() <= 320) ? 233 : 260)) * -1,
-            // autoplay: {
-            //     delay: 2000,
-            //     disableOnInteraction: false
-            // }
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            }
         });
     }
     if ($('.poster-swiper-container').length > 0) {
