@@ -61,6 +61,16 @@
             opacity: 0;
         }
     }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.4);
+        content: "";
+    }
 }
 
 .main_header {
@@ -634,6 +644,7 @@
                                 width: inherit;
                                 height: inherit;
                                 vertical-align: top;
+                                object-fit: cover;
                             }
                         }
 
@@ -1003,6 +1014,7 @@
                             width: inherit;
                             height: inherit;
                             vertical-align: top;
+                            object-fit: cover;
                         }
                     }
 
@@ -1948,6 +1960,7 @@
     flex-direction: row;
     margin-bottom: 20px;
     flex-wrap: wrap;
+
     li {
         color: #8D8D8D;
         font-size: 16px;
@@ -2261,4 +2274,21 @@
             }
         }
     }
+}
+
+.main_box_slide .item_slideshow .control_item .desction .info_day {
+    &:before {
+        background: url(../images/icon/data_detail.png) no-repeat;
+        background-size: 100%;
+    }
+}
+
+.box_social {
+    ul {
+        justify-content: center;
+    }
+}
+
+.ed_bar_top .main_content.respoMenu {
+    padding-top: 100px;
 }
