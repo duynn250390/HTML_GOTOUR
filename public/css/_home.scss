@@ -740,6 +740,9 @@
                         padding: 3px 5px;
                         font-size: px2em(12);
                     }
+                    @include maxWidth(375px) {
+                        font-size: px2em(10);
+                    }
                 }
 
                 &:hover,
