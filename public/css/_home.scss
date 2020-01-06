@@ -472,6 +472,7 @@
                     @include fontSizeB1();
                     margin-bottom: 0.6em;
                     height: 44px;
+                    @include break_word(2, 22);
                     color: $col02;
                 }
 
