@@ -2303,3 +2303,30 @@
         }
     }
 }
+
+.paymment {
+    .modul01 {
+        @include maxWidth(480px) {
+            overflow-x: scroll;
+        }
+
+        .list_box_col,
+        .content_list_col {
+            @include maxWidth(480px) {
+                min-width: 1000px;
+            }
+        }
+    }
+
+    .modul04 {
+        @include maxWidth(480px) {
+            overflow-x: scroll;
+        }
+
+        .main_grid {
+            @include maxWidth(480px) {
+                min-width: 1000px;
+            }
+        }
+    }
+}
