@@ -958,14 +958,22 @@
     cursor: pointer;
 
     .box___more_item {
-        color: #8D8D8D;
-        font-size: px2em(18);
+
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
 
+        a {
+            text-decoration: none;
+            outline: none;
+            color: #8D8D8D;
+            font-size: px2em(18);
+        }
+
         &:after {
+            position: absolute;
+            right: 15px;
             content: '';
             width: 28px;
             height: 7px;
@@ -1095,8 +1103,9 @@
 .list_now_detail {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-top: 10px;
+    margin-left: 10px;
 
     li {
         color: #8D8D8D;
@@ -2330,10 +2339,12 @@
         }
     }
 }
-.grid_class{
-    @include maxWidth(480px){
+
+.grid_class {
+    @include maxWidth(480px) {
         overflow-y: scroll;
-        .items_links{
+
+        .items_links {
             min-width: 1000px;
         }
     }
