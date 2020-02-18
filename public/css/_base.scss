@@ -45,16 +45,16 @@ $col08:#8D8D8D;
 $col09:#ccc;
 
 .container_dis {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    width: 1008px;
+    padding-right: 10px;
+    padding-left: 10px;
     margin-right: auto;
     margin-left: auto;
 
-    @media (max-width: 480px) {
-        padding-right: 10px;
-        padding-left: 10px;
-    }
+    // @media (max-width: 480px) {
+    //     padding-right: 10px;
+    //     padding-left: 10px;
+    // }
 }
 
 @mixin tranOpacity($var, $time) {
@@ -123,29 +123,29 @@ $col09:#ccc;
     transition: all 0.3s ease-in-out 0s;
 }
 
-@media (min-width:768px) {
-    .container_dis {
-        max-width: 100%
-    }
-}
+// @media (min-width:768px) {
+//     .container_dis {
+//         max-width: 100%
+//     }
+// }
 
-@media (min-width: 992px) {
-    .container_dis {
-        max-width: 960px
-    }
-}
+// @media (min-width: 992px) {
+//     .container_dis {
+//         max-width: 960px
+//     }
+// }
 
-@media (min-width:1200px) {
-    .container_dis {
-        max-width: 1140px
-    }
-}
+// @media (min-width:1200px) {
+//     .container_dis {
+//         max-width: 1120px
+//     }
+// }
 
-@media (min-width:1366px) {
-    .container_dis {
-        max-width: 1400px
-    }
-}
+// @media (min-width:1366px) {
+//     .container_dis {
+//         max-width: 1400px
+//     }
+// }
 
 .bold {
     font-weight: bold;
@@ -779,5 +779,26 @@ input[type=range]:focus::-ms-fill-upper {
 
     @include maxWidth(480px) {
         height: 40px;
+    }
+}
+@mixin editPladeHolder {
+    &::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        @content;
+    }
+
+    &::-moz-placeholder {
+        /* Firefox 19+ */
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        /* IE 10+ */
+        @content;
+    }
+
+    &:-moz-placeholder {
+        /* Firefox 18- */
+        @content;
     }
 }
