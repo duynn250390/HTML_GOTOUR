@@ -429,13 +429,13 @@
     .main_box_slide {
         padding-top: 3em;
 
-        @include maxWidth(980px) {
-            padding-top: 2em;
-        }
+        // @include maxWidth(980px) {
+        //     padding-top: 2em;
+        // }
 
-        @include maxWidth(768px) {
-            padding-top: 1em;
-        }
+        // @include maxWidth(768px) {
+        //     padding-top: 1em;
+        // }
 
     }
 }
@@ -477,22 +477,22 @@
                 padding: 1em 0;
 
                 .heading_top {
-                    @include fontSizeB1();
                     margin-bottom: 0.6em;
                     height: 44px;
                     @include break_word(2, 22);
                     color: $col02;
+                    font-size: px2em(14);
                 }
 
                 .heading_bot {
-                    @include fontSizeB1();
-                    font-weight: bold;
+                    font-weight: 600;
+                    font-size: px2em(18);
                     margin-bottom: 0.6em;
                     color: #000;
                 }
 
                 .info_day {
-                    @include fontSizeA();
+                    font-size: px2em(14);
                     position: relative;
                     color: $col05;
                     display: flex;
@@ -871,7 +871,7 @@
         text-decoration: none;
         outline: none;
         color: #3F65AE;
-        font-size: 3.214em;
+        font-size: px2em(30);
         margin-top: 1.5em;
         @include tran_slow_03();
 
@@ -1403,7 +1403,7 @@
 
             .article_category {
                 color: $col08;
-                @include fontSizeA();
+                font-size: px2em(14);
                 margin-bottom: 1em;
             }
 
@@ -1414,14 +1414,10 @@
                     display: block;
                     text-decoration: none;
                     outline: none;
-                    color: #000;
-                    font-weight: bold;
-                    @include fontSizeC();
+                    color: #1A1A1B;
+                    font-size: px2em(18);
                     @include tran_slow_03();
 
-                    @include maxWidth(980px) {
-                        font-size: px2em(16);
-                    }
                 }
 
                 &:hover,
@@ -1680,9 +1676,9 @@
     margin-top: 3em;
     padding-right: 1em;
 
-    @include maxWidth(768px) {
-        padding-right: 0;
-    }
+    // @include maxWidth(768px) {
+    //     padding-right: 0;
+    // }
 
     &.nopa {
         padding-right: 0;
@@ -1734,8 +1730,7 @@
                 a {
                     text-decoration: none;
                     outline: none;
-                    font-size: px2em(24);
-                    font-weight: bold;
+                    font-size: px2em(18);
                     color: #000;
                     line-height: 1.4;
                     @include break_word(2, 30);
@@ -1745,21 +1740,13 @@
                     &:focus {
                         color: $colMain;
                     }
-
-                    @include maxWidth(980px) {
-                        font-size: px2em(22)
-                    }
-
-                    @include maxWidth(768px) {}
-
-                    @include maxWidth(480px) {}
                 }
             }
 
             .description_article {
                 color: $col08;
                 margin-bottom: 1em;
-                @include fontSizeA();
+                font-size: px2em(14);
                 @include break_word(2, 20);
             }
 
@@ -4234,7 +4221,7 @@
                     text-decoration: none;
                     outline: none;
                     color: #1A1A1B;
-                    font-size: px2em(18);
+                    font-size: px2em(16);
                     padding: 0 30px;
                 }
 
@@ -4343,8 +4330,8 @@
 
                     .thumnail {
                         float: left;
-                        width: 260px;
-                        height: 217px;
+                        width: 200px;
+                        height: 167px;
                         margin-right: 15px;
                         overflow: hidden;
 
@@ -4397,7 +4384,7 @@
 
 
         a {
-            font-size: px2em(22);
+            font-size: px2em(16);
             color: #4B4B4B;
             text-decoration: none;
             outline: none;
@@ -4452,7 +4439,7 @@
                 .item_tabs {
                     float: left;
                     padding: 0.5em 1em;
-                    font-size: px2em(20);
+                    font-size: px2em(18);
                     cursor: pointer;
                     color: #8D8D8D;
                     @include tran_slow_03();

@@ -199,14 +199,13 @@
             margin-top: 1em;
 
             .heading_top {
-                @include fontSizeB1();
                 margin-bottom: 0.6em;
                 color: $col08;
                 font-size: px2em(14);
             }
 
             .heading_bot {
-                @include fontSizeB1();
+                font-size: px2em(14);
                 font-weight: bold;
                 margin-bottom: 0.6em;
                 color: #000;
