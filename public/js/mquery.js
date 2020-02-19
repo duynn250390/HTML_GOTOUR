@@ -120,50 +120,24 @@ $(document).ready(function () {
     //         }
     //     ]
     // });
-   
+
+    $('#list_slide').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        prevArrow: '<div class="slick_prev_nu"></div>',
+        nextArrow: '<div class="slick_next_nu"></div>',
+    });
     $('#main_box_slide').slick({
         infinite: true,
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 2,
         dots: true,
         arrows: true,
         prevArrow: '<div class="slick_prev"></div>',
         nextArrow: '<div class="slick_next"></div>',
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    infinite: true,
-                    dots: true
-                }
-            },
-
-            {
-                breakpoint: 980,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 375,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
     });
     $('#main_box_slide_tour').slick({
         infinite: true,
@@ -211,7 +185,7 @@ $(document).ready(function () {
     });
     $('#main_box_slide_1').slick({
         infinite: true,
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 2,
         dots: true,
         arrows: false,
@@ -255,7 +229,7 @@ $(document).ready(function () {
     });
     $('#main_box_slide_2').slick({
         infinite: true,
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 2,
         dots: true,
         arrows: false,
@@ -299,7 +273,95 @@ $(document).ready(function () {
     });
     $('#main_box_slide_3').slick({
         infinite: true,
-        slidesToShow: 6,
+        slidesToShow: 5,
+        slidesToScroll: 2,
+        dots: true,
+        arrows: false,
+        prevArrow: '<div class="slick_prev"></div>',
+        nextArrow: '<div class="slick_next"></div>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    infinite: true,
+                    dots: true
+                }
+            },
+
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 375,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+    $('#main_box_slide_34').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 2,
+        dots: true,
+        arrows: false,
+        prevArrow: '<div class="slick_prev"></div>',
+        nextArrow: '<div class="slick_next"></div>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    infinite: true,
+                    dots: true
+                }
+            },
+
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 375,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+    $('#main_box_slide_35').slick({
+        infinite: true,
+        slidesToShow: 5,
         slidesToScroll: 2,
         dots: true,
         arrows: false,
@@ -469,6 +531,14 @@ function respon_menu() {
             'visibility': 'hidden',
         });
     }
+    $(document).on('click', '.item_tabs', function () {
+        var get_data_tabs = $(this).attr('data-tabs');
+        $('.item_tabs').removeClass('on');
+        $('.tabs_item').removeClass('on');
+        $(this).addClass('on');
+        $('#tabs_item_0' + get_data_tabs).addClass('on');
+        console.log(get_data_tabs);
+    });
     $(document).on('click', '#showModal1', function () {
         var action = $(this).attr('data-toggle');
         ModalTongle(action);
@@ -634,4 +704,56 @@ $(document).scroll(function () {
             'overflow': 'visible'
         });
     }
+});
+
+$(document).on('click', '.btn_prev', function () {
+    var sum_pic = $('.control_img').length;
+    var cu_at = parseInt($(this).attr('data-step'));
+
+    if (cu_at == 1) {
+        $('.control_img').removeClass('on');
+
+        $('.btn_prev').attr('data-step', sum_pic);
+        $(this).attr('data-step', sum_pic);
+
+        $('#pic_0' + sum_pic).addClass('on');
+
+    } else if (cu_at == sum_pic) {
+        $('.control_img').removeClass('on');
+
+        $('.btn_prev').attr('data-step', 2);
+        $(this).attr('data-step', 2);
+
+        $('#pic_0' + 2).addClass('on');
+    } else {
+        $('.control_img').removeClass('on');
+
+        $('.btn_prev').attr('data-step', 1);
+        $(this).attr('data-step', 1);
+        $('#pic_0' + 1).addClass('on');
+    }
+});
+
+$(document).on('click', '.btn_next', function () {
+    var sum_pic = $('.control_img').length;
+    var cu_at = parseInt($(this).attr('data-step'));
+    if (cu_at == sum_pic) {
+        $('.control_img').removeClass('on');
+        $(this).attr('data-step', 1);
+        $('.btn_prev').attr('data-step', 1);
+        $('#pic_0' + 1).addClass('on');
+    } else if (cu_at == 1) {
+        $('.control_img').removeClass('on');
+        $(this).attr('data-step', cu_at + 1);
+        $('.btn_prev').attr('data-step', cu_at + 1);
+        $('#pic_0' + 2).addClass('on');
+    } else {
+        $('.control_img').removeClass('on');
+        $(this).attr('data-step', sum_pic);
+        $('.btn_prev').attr('data-step', sum_pic);
+        $('#pic_0' + sum_pic).addClass('on');
+    }
+});
+$(document).on('click', '.goTop', function () {
+    $('html, body').animate({ scrollTop: 0 }, 800);
 });
