@@ -70,7 +70,7 @@
     }
 
 
-    .box_sli{
+    .box_sli {
         display: flex;
         flex-direction: row;
         padding: 2em 0;
@@ -86,41 +86,41 @@
 
             .name_cate {
                 color: #fff;
-                @include fontSizeB();
+                font-size: px2em(16);
                 margin-bottom: 1em;
 
-                @include maxWidth(480px) {
-                    font-size: px2em(14);
-                    margin-bottom: 0.5em;
-                }
+                // @include maxWidth(480px) {
+                //     font-size: px2em(14);
+                //     margin-bottom: 0.5em;
+                // }
             }
 
             .title_cate {
                 color: #fff;
-                font-size: 5em;
+                font-size: px2em(30);
                 font-weight: 600;
                 @include tran_slow_03();
 
-                @include maxWidth(1200px) {
-                    font-size: px2em(38);
-                }
+                // @include maxWidth(1200px) {
+                //     font-size: px2em(38);
+                // }
 
-                @include maxWidth(1024px) {
-                    font-size: px2em(36);
-                }
+                // @include maxWidth(1024px) {
+                //     font-size: px2em(36);
+                // }
 
-                @include maxWidth(980px) {
-                    font-size: px2em(34);
-                }
+                // @include maxWidth(980px) {
+                //     font-size: px2em(34);
+                // }
 
-                @include maxWidth(768px) {
-                    font-size: px2em(32);
-                    line-height: 1.4;
-                }
+                // @include maxWidth(768px) {
+                //     font-size: px2em(32);
+                //     line-height: 1.4;
+                // }
 
-                @include maxWidth(480px) {
-                    font-size: px2em(26);
-                }
+                // @include maxWidth(480px) {
+                //     font-size: px2em(26);
+                // }
             }
 
             .imfo_cate {

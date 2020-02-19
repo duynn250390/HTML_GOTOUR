@@ -139,12 +139,12 @@
             padding-left: 1em;
             flex-grow: 1;
 
-            @include maxWidth(480px) {
-                padding-left: 0;
-            }
+            // @include maxWidth(480px) {
+            //     padding-left: 0;
+            // }
 
             .heading_title {
-                font-size: px2em(24);
+                font-size: px2em(20);
                 font-weight: 600;
             }
 
@@ -251,7 +251,7 @@
             @include calc(width, '100% - 30px');
 
             .title_main {
-                font-size: px2em(20);
+                font-size: px2em(18);
                 font-weight: 600;
 
                 a {
@@ -350,7 +350,7 @@
 
 .btn_views {
     color: #fff;
-    padding: 1em 2em;
+    padding: 0.5em 1em;
     background: $col03;
     display: inline-block;
     text-align: center;
