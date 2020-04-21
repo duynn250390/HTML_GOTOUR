@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 22 27">
+  <g id="Group_788" data-name="Group 788" transform="translate(-14 -12)">
+    <g id="Group_782" data-name="Group 782" transform="translate(-25)">
+      <rect id="Rectangle_3475" data-name="Rectangle 3475" width="22" height="24" rx="5" transform="translate(39 12)" fill="#78bcc4"/>
+      <path id="Polygon_10" data-name="Polygon 10" d="M3,0,6,5H0Z" transform="translate(53 39) rotate(180)" fill="#78bcc4"/>
+    </g>
+    <text id="Q" transform="translate(20 28)" fill="#fff" font-size="14" font-family="NanumGothic"><tspan x="0" y="0">Q</tspan></text>
+  </g>
+</svg>

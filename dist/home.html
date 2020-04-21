@@ -1,0 +1,1820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Tabs Page</title>
+
+    <!-- MyStyle CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean" rel="stylesheet">
+    <link href="public/css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <aside class="warap">
+        <header class="main_header">
+            <div class="top_bar">
+                <div class="container_dis">
+                    <div class="level">
+                        <ul class="heaer_menu_drop">
+                            <li class="li_meu">
+                                <ul class="no_login">
+                                    <li class="login"><a href="login.html">로그인</a></li>
+                                    <li class="sign"><a href="">회원가입</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">고객센터</a></li>
+                            <li class="li_meu">
+                                <div class="aput_dorop">
+                                    한국어
+                                    <ul class="drop_down_menu drop_lang">
+                                        <li>KOR</li>
+                                        <li>ENG</li>
+                                        <li>VI</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_menu_brand_sum">
+                <div class="box_top_menu_now">
+                    <div class="container_dis">
+                        <div class="sum_top_menu">
+                            <div class="box_stack brand_icon">
+                                <a href="home.html" class="stlogo"></a>
+                            </div>
+                            <div class="box_stack search_form">
+                                <div class="input_key_form">
+                                    <input class="input_key_search" type="text" placeholder="Search...">
+                                    <button class="icon_search" type="submit"></button>
+                                </div>
+                                <div class="auto_tag_complate">
+                                    <ul class="sum_tags_search">
+                                        <li class="item_tag">
+                                            <a href="" class="tag">최신음악</a>
+                                            <span class="remove_tag"></span>
+                                        </li>
+                                        <li class="item_tag">
+                                            <a href="" class="tag">멜론차트</a>
+                                            <span class="remove_tag"></span>
+                                        </li>
+                                        <li class="item_tag">
+                                            <a href="" class="tag">티켓</a>
+                                            <span class="remove_tag"></span>
+                                        </li>
+                                        <li class="item_tag">
+                                            <a href="" class="tag">최신음악</a>
+                                            <span class="remove_tag"></span>
+                                        </li>
+                                        <li class="item_tag">
+                                            <a href="" class="tag">멜론차트</a>
+                                            <span class="remove_tag"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box_stack cmn_banner">
+                                <a href="" class="control_img on" id="pic_01">
+                                    <img src="public/images/icon/cmn01.png"></a>
+                                <a href="" class="control_img" id="pic_02">
+                                    <img src="public/images/icon/cmn02.png"></a>
+                                <a href="" class="control_img" id="pic_03">
+                                    <img src="public/images/icon/cmn_03.png"></a>
+                                <div class="control_cmn_banner">
+                                    <span class="cmn_btn btn_prev" data-step="1"></span>
+                                    <span class="cmn_btn btn_next" data-step="1"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_bot_menu_now">
+                    <div class="container_dis">
+                        <ul class="nav_bar">
+                            <li class="item_list on"><a href="home.html">HOME</a></li>
+                            <li class="item_list"><a href="list-category.html">KPOP/콘서트</a></li>
+                            <li class="item_list"><a href="list-category.html">공연/뮤지컬</a></li>
+                            <li class="item_list"><a href="list-category.html">전시/행사</a></li>
+                            <li class="item_list"><a href="list-category.html">현지투어/체험</a></li>
+                            <li class="item_list"><a href="list-category.html">팬미팅/이벤트</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_search animated" id="box_search">
+                <div class="container_dis">
+                    <div class="form_box_search">
+                        <!-- <div class="form_control_search"> -->
+                        <form method="GET" class="form_control_search">
+                            <div class="input_box">
+                                <input type="text" class="control_input" name="keySearch" id="control_input" />
+                                <span class="clear_text" id="clear_text"></span>
+                            </div>
+                            <div class="name_action_box">
+                                <button class="action_search">Search</button>
+                            </div>
+                        </form>
+                        <!-- </div> -->
+                        <div class="for_auto_suggestion">
+                            <div class="title_auto">인기 검색어</div>
+                            <ul class="list_key">
+                                <li><a href="">박보검</a></li>
+                                <li><a href="">TWICE</a></li>
+                                <li><a href="">BTS</a></li>
+                                <li><a href="">박보검</a></li>
+                                <li><a href="">홍길동</a></li>
+                                <li><a href="">서울공연</a></li>
+                                <li><a href="">검색어</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header><!-- main_header -->
+        <aside class="content_main_father" id="content_main_father">
+            <section class="main_content contenta respoMenu">
+                <div class="main_box_slide" id="main_box_slide">
+                    <div class="item_slideshow">
+                        <a href="detail-product.html" class=" control_item">
+                            <figure class="thumnail">
+                                <img src="public/images/share/item_slide02.png" alt="" />
+                                <span class="head_action current "></span>
+                            </figure>
+                            <div class="desction">
+                                <!-- <h2 class="heading_top">찬란하게 빛나는 영웅들의 </h2> -->
+                                <h3 class="heading_bot">뮤지컬
+                                    <엑스칼리버>
+                                </h3>
+                                <label class="info_day">
+                                    <span class="fromdate">2019.28.27</span>
+                                    <span class="todate">2019.08.31</span></label>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item_slideshow -->
+                    <div class="item_slideshow">
+                        <a href="detail-product.html" class=" control_item">
+                            <figure class="thumnail">
+                                <img src="public/images/share/item_slide03.png" alt="" />
+                                <span class="head_action current"></span>
+                            </figure>
+                            <div class="desction">
+                                <h3 class="heading_bot">뮤지컬
+                                    <엑스칼리버>
+                                </h3>
+                                <label class="info_day">
+                                    <span class="fromdate">2019.28.27</span>
+                                    <span class="todate">2019.08.31</span></label>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item_slideshow -->
+                    <div class="item_slideshow">
+                        <a href="detail-product.html" class=" control_item">
+                            <figure class="thumnail">
+                                <img src="public/images/share/item_slide01.png" alt="" />
+                                <span class="head_action current"></span>
+                            </figure>
+                            <div class="desction">
+                                <h3 class="heading_bot">뮤지컬
+                                    <엑스칼리버>
+                                </h3>
+                                <label class="info_day">
+                                    <span class="fromdate">2019.28.27</span>
+                                    <span class="todate">2019.08.31</span></label>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item_slideshow -->
+                    <div class="item_slideshow">
+                        <a href="detail-product.html" class=" control_item">
+                            <figure class="thumnail">
+                                <img src="public/images/share/item_slide01.png" alt="" />
+                                <span class="head_action "></span>
+                            </figure>
+                            <div class="desction">
+                                <h3 class="heading_bot">뮤지컬
+                                    <엑스칼리버>
+                                </h3>
+                                <label class="info_day">
+                                    <span class="fromdate">2019.28.27</span>
+                                    <span class="todate">2019.08.31</span></label>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item_slideshow -->
+                    <div class="item_slideshow">
+                        <a href="detail-product.html" class=" control_item">
+                            <figure class="thumnail">
+                                <img src="public/images/share/item_slide02.png" alt="" />
+                                <span class="head_action "></span>
+                            </figure>
+                            <div class="desction">
+                                <h3 class="heading_bot">뮤지컬
+                                    <엑스칼리버>
+                                </h3>
+                                <label class="info_day">
+                                    <span class="fromdate">2019.28.27</span>
+                                    <span class="todate">2019.08.31</span></label>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item_slideshow -->
+                    <div class="item_slideshow">
+                        <a href="detail-product.html" class=" control_item">
+                            <figure class="thumnail">
+                                <img src="public/images/share/item_slide03.png" alt="" />
+                                <span class="head_action "></span>
+                            </figure>
+                            <div class="desction">
+                                <h3 class="heading_bot">뮤지컬
+                                    <엑스칼리버>
+                                </h3>
+                                <label class="info_day">
+                                    <span class="fromdate">2019.28.27</span>
+                                    <span class="todate">2019.08.31</span></label>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item_slideshow -->
+                    <div class="item_slideshow">
+                        <a href="detail-product.html" class=" control_item">
+                            <figure class="thumnail">
+                                <img src="public/images/share/item_slide01.png" alt="" />
+                                <span class="head_action "></span>
+                            </figure>
+                            <div class="desction">
+                                <h3 class="heading_bot">뮤지컬
+                                    <엑스칼리버>
+                                </h3>
+                                <label class="info_day">
+                                    <span class="fromdate">2019.28.27</span>
+                                    <span class="todate">2019.08.31</span></label>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item_slideshow -->
+                    <div class="item_slideshow">
+                        <a href="detail-product.html" class=" control_item">
+                            <figure class="thumnail">
+                                <img src="public/images/share/item_slide02.png" alt="" />
+                                <span class="head_action "></span>
+                            </figure>
+                            <div class="desction">
+                                <h3 class="heading_bot">뮤지컬
+                                    <엑스칼리버>
+                                </h3>
+                                <label class="info_day">
+                                    <span class="fromdate">2019.28.27</span>
+                                    <span class="todate">2019.08.31</span></label>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item_slideshow -->
+                    <div class="item_slideshow">
+                        <a href="detail-product.html" class=" control_item">
+                            <figure class="thumnail">
+                                <img src="public/images/share/item_slide03.png" alt="" />
+                                <span class="head_action "></span>
+                            </figure>
+                            <div class="desction">
+                                <h3 class="heading_bot">뮤지컬
+                                    <엑스칼리버>
+                                </h3>
+                                <label class="info_day">
+                                    <span class="fromdate">2019.28.27</span>
+                                    <span class="todate">2019.08.31</span></label>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item_slideshow -->
+                </div>
+            </section>
+            <!-- contenta -->
+            <section class="main_content contentb list_cm">
+                <div class="container_dis">
+                    <div class="list_menu_edi">
+                        <ul class="main_list">
+                            <li class="item_list nona01">
+                                <a href="list-category.html" class="item_control">
+                                    <div class="img_top_thumb ">
+                                        <!-- <img src="public/images/icon/icon_na001.svg" alt="icon_item_custom1"> -->
+                                    </div>
+                                    <div class="name_label">
+                                        KPOP / 콘서트
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_list nona02">
+                                <a href="list-category.html" class="item_control">
+                                    <div class="img_top_thumb ">
+                                    </div>
+                                    <div class="name_label">
+                                        공연 / 뮤지컬
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_list nona03">
+                                <a href="list-category.html" class="item_control">
+                                    <div class="img_top_thumb ">
+                                    </div>
+                                    <div class="name_label">
+                                        전시 / 행사
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_list nona04">
+                                <a href="list-category.html" class="item_control">
+                                    <div class="img_top_thumb ">
+                                    </div>
+                                    <div class="name_label">
+                                        현지투어 / 체험
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_list nona05">
+                                <a href="list-category.html" class="item_control">
+                                    <div class="img_top_thumb">
+                                    </div>
+                                    <div class="name_label">
+                                        팬미팅/이벤트
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- contentb -->
+            <section class="main_content contentd">
+                <div class="container_dis">
+                    <div class="heading_main_title_content">
+                        <a href="list-category.html" class="main_title">KPOP/콘서트</a>
+                        <a href="#" class="btn bnt_more">MORE</a>
+                    </div>
+                    <div class="main_box_slide contentc" id="main_box_slide_2">
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide201.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide202.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide203.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide204.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide205.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide201.png" alt="" />
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide202.png" alt="" />
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.2s8.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide203.png" alt="" />
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                    </div>
+                </div>
+            </section>
+            <!-- Slideshow Kpop -->
+            <section class="main_content contentc">
+                <div class="container_dis">
+                    <div class="heading_main_title_content">
+                        <a href=list-category.html "" class="main_title">공연/뮤지컬</a>
+                        <a href="#" class="btn bnt_more">MORE</a>
+                    </div>
+                    <div class="main_box_slide contentc" id="main_box_slide_1">
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide101.png" alt="" />
+                                    <span class="head_action "></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide102.png" alt="" />
+                                    <span class="head_action "></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide103.png" alt="" />
+                                    <span class="head_action "></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide104.png" alt="" />
+                                    <span class="head_action "></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide101.png" alt="" />
+                                    <span class="head_action "></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide102.png" alt="" />
+                                    <span class="head_action "></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide103.png" alt="" />
+                                    <span class="head_action "></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.2s8.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide104.png" alt="" />
+                                    <span class="head_action "></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                    </div>
+                </div>
+            </section>
+            <!-- Slideshow 공연/뮤지컬 -->
+            <section class="main_content contente">
+                <div class="container_dis">
+                    <div class="heading_main_title_content">
+                        <a href="list-category.html" class="main_title">전시/행사</a>
+                        <a href="#" class="btn bnt_more">MORE</a>
+                    </div>
+                    <div class="main_box_slide contentc" id="main_box_slide_34">
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide301.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide302.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide303.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide304.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide305.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide301.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide302.png" alt="" />
+                                    <span class="head_action "></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.2s8.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide303.png" alt="" />
+                                    <span class="head_action "></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                    </div>
+                </div>
+            </section>
+            <!-- contente -->
+            <section class="main_content contente">
+                <div class="container_dis">
+                    <div class="heading_main_title_content">
+                        <a href="list-category.html" class="main_title">현지투어/체험</a>
+                        <a href="#" class="btn bnt_more">MORE</a>
+                    </div>
+                    <div class="content_table">
+                        <div class="item_list">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <div class="box_img">
+                                        <img src="public/images/hot_news/000a.png" alt="" />
+                                    </div>
+                                </figure>
+                                <div class="desction">
+                                    <h2 class="heading_top">젊은이의 거리 홍대 도보 여행</h2>
+                                    <label>5,000원</label>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_list">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <div class="box_img">
+                                        <img src="public/images/hot_news/000b.png" alt="" />
+                                    </div>
+                                </figure>
+                                <div class="desction">
+                                    <h2 class="heading_top">젊은이의 거리 홍대 도보 여행</h2>
+                                    <label>5,000원</label>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_list">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <div class="box_img">
+                                        <img src="public/images/hot_news/000c.png" alt="" />
+                                    </div>
+                                </figure>
+                                <div class="desction">
+                                    <h2 class="heading_top">젊은이의 거리 홍대 도보 여행</h2>
+                                    <label>5,000원</label>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_list">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <div class="box_img">
+                                        <img src="public/images/hot_news/000d.png" alt="" />
+                                    </div>
+                                </figure>
+                                <div class="desction">
+                                    <h2 class="heading_top">젊은이의 거리 홍대 도보 여행</h2>
+                                    <label>5,000원</label>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="box_more word_page">
+                <a href="">상품 더보기</a>
+            </div> -->
+                </div>
+            </section>
+            <!-- contente -->
+            <section class="main_content contente">
+                <div class="container_dis">
+                    <div class="heading_main_title_content">
+                        <a href="list-category.html" class="main_title">팬미팅/이벤트</a>
+                        <a href="#" class="btn bnt_more">MORE</a>
+                    </div>
+                    <div class="main_box_slide contentc" id="main_box_slide_35">
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide301.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide302.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide303.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide304.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide305.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide301.png" alt="" />
+                                    <span class="head_action current"></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide302.png" alt="" />
+                                    <span class="head_action "></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.2s8.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                        <div class="item_slideshow">
+                            <a href="detail-product.html" class=" control_item">
+                                <figure class="thumnail">
+                                    <img src="public/images/share/item_slide303.png" alt="" />
+                                    <span class="head_action "></span>
+                                </figure>
+                                <div class="desction">
+                                    <h3 class="heading_bot">뮤지컬
+                                        <엑스칼리버>
+                                    </h3>
+                                    <label class="info_day">
+                                        <span class="fromdate">2019.28.27</span>
+                                        <span class="todate">2019.08.31</span></label>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item_slideshow -->
+                    </div>
+                </div>
+            </section>
+            <!-- contente -->
+            <section class="main_content contentqc">
+                <div class="container_dis">
+                    <div class="img_qc">
+                        <a href="">
+                            <img src="public/images/hot_news/qc01.jpg" alt="qc">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- contentqc -->
+            <section class="main_content advance_ranking">
+                <div class="container_dis">
+                    <div class="heading_main_title_content">
+                        <a href="" class="main_title">예매랭킹</a>
+                        <a href="#" class="btn bnt_more">MORE</a>
+                    </div>
+                    <div class="main_box_content">
+                        <ul class="list_control_tabs">
+                            <li class="item_tabs on" data-tabs="1">KPOP/콘서트</li>
+                            <li class="item_tabs" data-tabs="2">공연/뮤지컬</li>
+                            <li class="item_tabs" data-tabs="3">전시/행사</li>
+                            <li class="item_tabs" data-tabs="4">현지투어/체험</li>
+                            <li class="item_tabs" data-tabs="5">팬미팅/이벤트</li>
+                        </ul>
+                        <div class="datetime">
+                            <span>2020년 01월 09일 (목)</span>
+                        </div>
+                        <!-- <div class="action_filter">
+                    <div class="box_control_filter">
+                        <div class="group_fiter calen_drop">
+                            <input type="text" class="control_input" placeholder="2020년 9일 2월">
+                            <span class="span_icon"></span>
+                        </div>
+                        <div class="group_fiter">
+                            <input type="text" class="control_input" placeholder="날짜 입력...">
+                            <button type="submit" class="control_button">Search</button>
+                        </div>
+                    </div>
+                </div> -->
+                        <div class="control_list_tabs">
+                            <div class="tabs_item on" id="tabs_item_01">
+                                <ul class="list_item">
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>1</span></div>
+                                            <div class="num_rank up">1</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca001.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>2</span></div>
+                                            <div class="num_rank down">1</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca002.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>3</span></div>
+                                            <div class="num_rank up">2</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca003.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>1</span></div>
+                                            <div class="num_rank up">1</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca001.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>2</span></div>
+                                            <div class="num_rank down">1</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca002.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>3</span></div>
+                                            <div class="num_rank up">2</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca003.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tabs_item" id="tabs_item_02">
+                                <ul class="list_item">
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>1</span></div>
+                                            <div class="num_rank up">1</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca001.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>2</span></div>
+                                            <div class="num_rank down">1</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca003.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>3</span></div>
+                                            <div class="num_rank up">2</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca001.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tabs_item" id="tabs_item_03">
+                                <ul class="list_item">
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>1</span></div>
+                                            <div class="num_rank up">1</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca003.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>2</span></div>
+                                            <div class="num_rank down">1</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca001.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>3</span></div>
+                                            <div class="num_rank up">2</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca002.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tabs_item" id="tabs_item_04">
+                                <ul class="list_item">
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>1</span></div>
+                                            <div class="num_rank up">1</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca003.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>2</span></div>
+                                            <div class="num_rank down">1</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca001.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>3</span></div>
+                                            <div class="num_rank up">2</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca002.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>3</span></div>
+                                            <div class="num_rank up">2</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca002.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>3</span></div>
+                                            <div class="num_rank up">2</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca002.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tabs_item" id="tabs_item_05">
+                                <ul class="list_item">
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>1</span></div>
+                                            <div class="num_rank up">1</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca003.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>2</span></div>
+                                            <div class="num_rank down">1</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca001.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>3</span></div>
+                                            <div class="num_rank up">2</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca002.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item_list">
+                                        <div class="ranking_box">
+                                            <div class="num_top"><span>3</span></div>
+                                            <div class="num_rank up">2</div>
+                                        </div>
+                                        <div class="thumb_img">
+                                            <a href="">
+                                                <img src="public/images/hot_news/img_ca003.png">
+                                            </a>
+                                        </div>
+                                        <div class="box_content">
+                                            <h2><a href="">젊은이의 거리 홍대 도보 여행</a></h2>
+                                            <ul class="info">
+                                                <li class="time">09:00 ~ 21:00</li>
+                                                <li>더케이호텔엔리조트</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="box_more word_page">
+                    <a href="">상품 더보기</a>
+                </div> -->
+                    </div>
+                </div>
+            </section>
+            <section class="main_content contentf">
+                <div class="container_dis">
+                    <div class="heading_main_title_content">
+                        <a href="notice.html" class="main_title">리뷰</a>
+                        <a href="list-review.html" class="btn bnt_more">MORE</a>
+                    </div>
+                    <div class="list_news_items_review">
+                        <ul class="news_items_control">
+                            <li class="news_items">
+                                <div class="news_item_group">
+                                    <figure class="article_thumbnails">
+                                        <a href="">
+                                            <img src="public/images/share/news_item06.png" alt="item news ">
+                                        </a>
+                                    </figure>
+                                    <aside class="box_aside_ariticle">
+                                        <h3 class="article_title"><a href="">뮤지컬 <엑스칼리버></a></h3>
+                                        <h4 class="article_category">Signer</h4>
+                                        <div class="description_review">대체적으로 실내악과 독주곡에 초점을 맞추고 있는데, 독주곡은 주로 오스트리아 악기와 함께 연주한 곡들이다. Paladino 음반사는 오늘날 우리가 마주하는 수많은 흥미진진한 클래식 음악시장에</div>
+                                        <ul class="star_review">
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li></li>
+                                        </ul>
+                                    </aside>
+                                </div>
+                            </li>
+                            <li class="news_items">
+                                <div class="news_item_group">
+                                    <figure class="article_thumbnails">
+                                        <a href="">
+                                            <img src="public/images/share/news_item05.png" alt="item news ">
+                                        </a>
+                                    </figure>
+                                    <aside class="box_aside_ariticle">
+                                        <h3 class="article_title"><a href="">젊은이의 거리 홍대 도보 여행</a></h3>
+                                        <h4 class="article_category">Signer</h4>
+                                        <div class="description_review">대체적으로 실내악과 독주곡에 초점을 맞추고 있는데, 독주곡은 주로 오스트리아 악기와 함께 연주한 곡들이다. Paladino 음반사는 오늘날 우리가 마주하는 수많은 흥미진진한 클래식 음악시장에</div>
+                                        <ul class="star_review">
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li></li>
+                                        </ul>
+                                    </aside>
+                                </div>
+                            </li>
+                            <li class="news_items">
+                                <div class="news_item_group">
+                                    <figure class="article_thumbnails">
+                                        <a href="">
+                                            <img src="public/images/share/news_item04.png" alt="item news ">
+                                        </a>
+                                    </figure>
+                                    <aside class="box_aside_ariticle">
+                                        <h3 class="article_title"><a href="">젊은이의 거리 홍대 도보 여행</a></h3>
+                                        <h4 class="article_category">Signer</h4>
+                                        <div class="description_review">대체적으로 실내악과 독주곡에 초점을 맞추고 있는데, 독주곡은 주로 오스트리아 악기와 함께 연주한 곡들이다. Paladino 음반사는 오늘날 우리가 마주하는 수많은 흥미진진한 클래식 음악시장에</div>
+                                        <ul class="star_review">
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li></li>
+                                        </ul>
+                                    </aside>
+                                </div>
+                            </li>
+                            <li class="news_items">
+                                <div class="news_item_group">
+                                    <figure class="article_thumbnails">
+                                        <a href="">
+                                            <img src="public/images/share/news_item03.png" alt="item news ">
+                                        </a>
+                                    </figure>
+                                    <aside class="box_aside_ariticle">
+                                        <h3 class="article_title"><a href="">젊은이의 거리 홍대 도보 여행</a></h3>
+                                        <h4 class="article_category">Signer</h4>
+                                        <div class="description_review">대체적으로 실내악과 독주곡에 초점을 맞추고 있는데, 독주곡은 주로 오스트리아 악기와 함께 연주한 곡들이다. Paladino 음반사는 오늘날 우리가 마주하는 수많은 흥미진진한 클래식 음악시장에</div>
+                                        <ul class="star_review">
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li class="active"></li>
+                                            <li></li>
+                                        </ul>
+                                    </aside>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="box_more word_page">
+                <a href="">상품 더보기</a>
+            </div> -->
+                </div>
+            </section>
+            <!-- contentf -->
+            <section class="main_content content_list_news">
+                <div class="container_dis">
+                    <div class="box_aside_news_fa">
+                        <div class="box_aside_news box_left_content">
+                            <div class="heading_main_title_content">
+                                <a href="" class="main_title">한류정보</a>
+                                <a href="notice.html" class="btn bnt_more">MORE</a>
+                            </div>
+                            <ul class="box_list_article">
+                                <li class="list_article">
+                                    <figure class="form_thumbnails">
+                                        <a href="">
+                                            <img src="public/images/hot_news/nani01.jpg" alt="thumbnails">
+                                        </a>
+                                    </figure>
+                                    <article class="info_description">
+                                        <h3 class="title_article"><a href="">젊은이의 거리 홍대 도보 여행</a></h3>
+                                        <div class="description_article">
+                                            관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물 구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다. 관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물
+                                            구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다.
+                                        </div>
+                                        <div class="date_time">2019.08.31</div>
+                                    </article>
+                                </li>
+                                <!-- list_article -->
+                                <li class="list_article">
+                                    <figure class="form_thumbnails">
+                                        <a href="">
+                                            <img src="public/images/hot_news/nani02.jpg" alt="thumbnails">
+                                        </a>
+                                    </figure>
+                                    <article class="info_description">
+                                        <h3 class="title_article"><a href="">젊은이의 거리 홍대 도보 여행</a></h3>
+                                        <div class="description_article">
+                                            관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물 구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다. 관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물
+                                            구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다.
+                                        </div>
+                                        <div class="date_time">2019.08.31</div>
+                                    </article>
+                                </li>
+                                <!-- list_article -->
+                                <li class="list_article">
+                                    <figure class="form_thumbnails">
+                                        <a href="">
+                                            <img src="public/images/hot_news/nani03.jpg" alt="thumbnails">
+                                        </a>
+                                    </figure>
+                                    <article class="info_description">
+                                        <h3 class="title_article"><a href="">젊은이의 거리 홍대 도보 여행</a></h3>
+                                        <div class="description_article">
+                                            관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물 구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다. 관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물
+                                            구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다.
+                                        </div>
+                                        <div class="date_time">2019.08.31</div>
+                                    </article>
+                                </li>
+                                <!-- list_article -->
+                                <li class="list_article">
+                                    <figure class="form_thumbnails">
+                                        <a href="">
+                                            <img src="public/images/hot_news/nani02.jpg" alt="thumbnails">
+                                        </a>
+                                    </figure>
+                                    <article class="info_description">
+                                        <h3 class="title_article"><a href="">젊은이의 거리 홍대 도보 여행</a></h3>
+                                        <div class="description_article">
+                                            관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물 구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다. 관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물
+                                            구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다.
+                                        </div>
+                                        <div class="date_time">2019.08.31</div>
+                                    </article>
+                                </li>
+                                <!-- list_article -->
+                            </ul>
+                            <!-- <div class="box_more word_page">
+                        <a href="">상품 더보기</a>
+                    </div> -->
+                        </div>
+                        <div class="box_aside_news box_right_content">
+                            <div class="heading_main_title_content">
+                                <a href="" class="main_title">공지사항</a>
+                                <a href="notice.html" class="btn bnt_more">MORE</a>
+                            </div>
+                            <ul class="box_list_article nopa">
+                                <li class="list_article">
+                                    <figure class="form_thumbnails">
+                                        <a href="">
+                                            <img src="public/images/hot_news/nani04.jpg" alt="thumbnails">
+                                        </a>
+                                    </figure>
+                                    <article class="info_description">
+                                        <h3 class="title_article"><a href="">젊은이의 거리 홍대 도보 여행</a></h3>
+                                        <div class="description_article">
+                                            관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물 구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다. 관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물
+                                            구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다.
+                                        </div>
+                                        <div class="date_time">2019.08.31</div>
+                                    </article>
+                                </li>
+                                <!-- list_article -->
+                                <li class="list_article">
+                                    <figure class="form_thumbnails">
+                                        <a href="">
+                                            <img src="public/images/hot_news/nani05.jpg" alt="thumbnails">
+                                        </a>
+                                    </figure>
+                                    <article class="info_description">
+                                        <h3 class="title_article"><a href="">젊은이의 거리 홍대 도보 여행</a></h3>
+                                        <div class="description_article">
+                                            관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물 구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다. 관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물
+                                            구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다.
+                                        </div>
+                                        <div class="date_time">2019.08.31</div>
+                                    </article>
+                                </li>
+                                <!-- list_article -->
+                                <li class="list_article">
+                                    <figure class="form_thumbnails">
+                                        <a href="">
+                                            <img src="public/images/hot_news/nani06.jpg" alt="thumbnails">
+                                        </a>
+                                    </figure>
+                                    <article class="info_description">
+                                        <h3 class="title_article"><a href="">젊은이의 거리 홍대 도보 여행</a></h3>
+                                        <div class="description_article">
+                                            관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물 구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다. 관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물
+                                            구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다.
+                                        </div>
+                                        <div class="date_time">2019.08.31</div>
+                                    </article>
+                                </li>
+                                <!-- list_article -->
+                                <li class="list_article">
+                                    <figure class="form_thumbnails">
+                                        <a href="">
+                                            <img src="public/images/hot_news/nani05.jpg" alt="thumbnails">
+                                        </a>
+                                    </figure>
+                                    <article class="info_description">
+                                        <h3 class="title_article"><a href="">젊은이의 거리 홍대 도보 여행</a></h3>
+                                        <div class="description_article">
+                                            관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물 구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다. 관측자들은 중국과 미국이 합의에 도달하는 능력이 매우 낮다고 말합니다. 도널드 트럼프 미국 대통령이 3 천억 달러의 중국 상품에 10 %의 세금을 부과 한 후 베이징은 10 년 만에 미국 농산물
+                                            구매를 중단하고 위안화를 최저 수준으로 낮추겠다고 발표했다.
+                                        </div>
+                                        <div class="date_time">2019.08.31</div>
+                                    </article>
+                                </li>
+                                <!-- list_article -->
+                            </ul>
+                            <!-- <div class="box_more word_page">
+                        <a href="">상품 더보기</a>
+                    </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- content_list_news -->
+            <!-- <section class="more_item_add">
+            <div class="container_dis">
+                <ul class="list_uniku">
+                    <li class="maps_uniku">
+                        <a href="">한국여행정보</a>
+                    </li>
+                    <li class="show_uniku">
+                        <a href="">공연장 정보</a>
+                    </li>
+                    <li class="maps_faq">
+                        <a href="">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </section> -->
+        </aside>
+        <footer class="main_footer">
+            <div class="footer">
+                <div class="footer_top">
+                    <div class="container_dis">
+                        <div class="box_footer_top">
+                            <ul class="menu_footer">
+                                <li><a href="">회사소개</a></li>
+                                <li><a href="">개인정보처리방침</a></li>
+                                <li><a href="">이용약관</a></li>
+                                <li><a href="">예매가이드</a></li>
+                                <li><a href="">공연등록문의</a></li>
+                            </ul>
+                            <div class="box_social">
+                                <ul>
+                                    <li class="fb"><a href="">facebook</a></li>
+                                    <li class="tw"><a href="">twicter</a></li>
+                                    <li class="bulet"><a href="">bullet</a></li>
+                                    <li class="line"><a href="">line</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bot">
+                    <div class="container_dis">
+                        <div class="box_footer_bot">
+                            <ul class="list_footer">
+                                <li>(주)고투어여행사 | 서울시 중구 태평로2가 69-15 502</li>
+                                <li>사업자등록번호 104-86-43305</li>
+                                <li>통신판매업신고 서울중구 제0003호</li>
+                            </ul>
+                            <ul class="list_footer">
+                                <li>고객센터 02-777-0442</li>
+                                <li>개인정보관리책임자 박성환</li>
+                                <li>COPYRIGHT(C) GOTOUR TICKET. ALL RIGHT RESERVED.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- main_footer -->
+    </aside>
+    <div class="box_nuwa">
+        <div class="title">QUICK</div>
+        <div class="list_server">
+            <ul class="server_lit">
+                <li class="item_list search">
+                    <a href="services-center.html">
+                        <div class="icon_action "></div>
+                        <label class="name">예약확인</label>
+                    </a>
+                </li>
+                <li class="item_list service">
+                    <a href="services-center.html">
+                        <div class="icon_action "></div>
+                        <label class="name">고객센터</label>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="title">오늘 본 상품</div>
+        <div class="slide_box">
+            <div class="list_slide" id="list_slide">
+                <div class="item_slide">
+                    <a href="">
+                        <img src="public/images/hot_news/nani05.jpg" alt="">
+                    </a>
+                </div>
+                <div class="item_slide">
+                    <a href="">
+                        <img src="public/images/hot_news/nani03.jpg" alt="">
+                    </a>
+                </div>
+                <div class="item_slide">
+                    <a href="">
+                        <img src="public/images/hot_news/nani02.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="goTop">
+            <div class="box_go"><span></span>TOP</div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/slick.js"></script>
+    <script src="public/js/modal.js"></script>
+    <script src="public/js/mquery.js"></script>
+</body>
+
+</html>

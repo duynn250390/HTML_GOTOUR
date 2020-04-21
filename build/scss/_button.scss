@@ -1,0 +1,95 @@
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: auto;
+    background: #ddd;
+    padding: 8px 15px;
+    font-size: px2em(14);
+    @include borderRadius(0px);
+    @include tran_slow_03();
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &.btn_none {
+        border: 1px solid #e4e4e4;
+        background: transparent;
+        color: #686868;
+        @include hofo() {
+            background: #e4e4e4;
+        }
+    }
+    &.btn_primary {
+        background: #3F65AE;
+        color: #fff;
+        @include hofo() {
+            background: #15336B;
+            color: #fff;
+        }
+    }
+    &.btn_light {
+        border: 1px solid #767676;
+        background: #767676;
+        color: #fff;
+        @include hofo() {
+            border: 1px solid #484848;
+            background: #484848;
+            color: #fff;
+        }
+    }
+    &.btn_sussec {
+        border: 1px solid #ff8d8d;
+        background: #ff8d8d;
+        color: #022047;
+        @include hofo() {
+            border: 1px solid #dc5a5a;
+            background: #dc5a5a;
+        }
+    }
+    &.btn_default {
+        border: 1px solid #60BE9A;
+        background: #fff;
+        color: #022047;
+        @include hofo() {
+            background: #7AFFCB;
+            border: 1px solid #7AFFCB;
+        }
+    }
+    &.btn_sucssec {
+        border: 1px solid #78BCC4;
+        background: #78BCC4;
+        color: #fff;
+        @include hofo() {
+            background: #00606B;
+            border: 1px solid #00606B;
+        }
+    }
+    &.btn_more_ticket {
+        background: #fff;
+        color: #3F65AE;
+        padding: 5px 15px;
+        border: 1px solid #3F65AE;
+        @include borderRadius(15px);
+    }
+    &.btn01{
+        background: #78BCC4;
+        color: #fff;
+        border: 1px solid #78BCC4;
+        @include hofo() {
+            background: #006571;
+            border: 1px solid #006571;
+        }
+    }
+    &.btn02{
+        background: #E4E4E4;
+        color: #707070;
+        border: 1px solid #E4E4E4;
+        @include hofo() {
+            background: #a2a2a2;
+            border: 1px solid #a2a2a2;
+            color: #fff;
+        }
+    }
+}

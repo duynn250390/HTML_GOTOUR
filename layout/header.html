@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Tabs Page</title>
+    
+    <!-- MyStyle CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean" rel="stylesheet">
+    <link href="public/css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+<body>
+    <aside class="warap">
+        <header class="main_header">
+            <div class="top_bar">
+                <div class="container_dis">
+                    <div class="level">
+                        <ul class="heaer_menu_drop">
+                            <li class="li_meu">
+                                <ul class="no_login">
+                                    <li class="login"><a href="login.html">로그인</a></li>
+                                    <li class="sign"><a href="">회원가입</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">고객센터</a></li>
+                            <li class="li_meu">
+                                <div class="aput_dorop">
+                                    한국어
+                                    <ul class="drop_down_menu drop_lang">
+                                        <li>KOR</li>
+                                        <li>ENG</li>
+                                        <li>VI</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box_menu_brand_sum">
+                @@include('header/top.html')
+                @@include('header/menu.html')
+            </div>
+            <div class="box_search animated" id="box_search">
+                <div class="container_dis">
+                    <div class="form_box_search">
+                        <!-- <div class="form_control_search"> -->
+                        <form method="GET" class="form_control_search">
+                            <div class="input_box">
+                                <input type="text" class="control_input" name="keySearch" id="control_input" />
+                                <span class="clear_text" id="clear_text"></span>
+                            </div>
+                            <div class="name_action_box">
+                                <button class="action_search">Search</button>
+                            </div>
+                        </form>
+                        <!-- </div> -->
+                        <div class="for_auto_suggestion">
+                            <div class="title_auto">인기 검색어</div>
+                            <ul class="list_key">
+                                <li><a href="">박보검</a></li>
+                                <li><a href="">TWICE</a></li>
+                                <li><a href="">BTS</a></li>
+                                <li><a href="">박보검</a></li>
+                                <li><a href="">홍길동</a></li>
+                                <li><a href="">서울공연</a></li>
+                                <li><a href="">검색어</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header><!-- main_header -->

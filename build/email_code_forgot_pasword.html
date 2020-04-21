@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Email Tempalte</title>
+    <!-- MyStyle CSS -->
+
+</head>
+
+<body>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+            font-family: 'Roboto', sans-serif;
+            /* background: #f1f1f1; */
+
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+            width: 728px;
+            color: #343434;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .bg_footer {
+            background-image: url('public/images/icon/bg_footer_email.png');
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 166px;
+            width: 728px;
+        }
+
+        .list_social {
+            display: block;
+            text-align: center;
+        }
+
+        .list_social li {
+            display: inline-block;
+            list-style: none;
+            height: 54px;
+            width: 54px;
+            /* border: 1px solid #707070; */
+            border-radius: 100%;
+            line-height: 54px;
+            margin-right: 14px;
+        }
+
+        .list_social li a {
+            display: block;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: 100%;
+        }
+
+        .list_social li a img {
+            height: 35px;
+            width: 35px;
+        }
+
+        .color_a {
+            color: #3F65AE;
+            text-decoration: underline;
+        }
+
+        .title_top {
+            font-weight: 600;
+            font-size: 26px;
+            color: #4B4B4B;
+        }
+
+        .footer_box p {
+            margin: 8px 0;
+        }
+    </style>
+    <table align="center">
+        <tbody style=" border-bottom: 1px solid #E4E4E4;">
+            <tr>
+                <td style="padding-bottom: 30px;">
+                    <p>Somebody (hopefully you) requested a new password for the Gotour account for
+                        <span style="border-bottom: 1px solid #343434;">thanhha542009@gmail.com</span>. No changes have
+                        been made to your account yet.</p>
+                    <p style="text-align: center;">Now you can reset your password by code below</p>
+                    <p style="font-size:30px;font-weight:bold;text-align:center">200238</p>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <ul class="list_social" style="padding-left: 0;">
+                        <li class="social1">
+                            <a href="">
+                                <img src="public/images/email_template/fb.png">
+                            </a>
+                        </li>
+                        <li class="social2">
+                            <a href="">
+                                <img src="public/images/email_template/tw.png">
+                            </a>
+                        </li>
+                        <li class="social3">
+                            <a href="">
+                                <img src="public/images/email_template/na.png">
+                            </a>
+                        </li>
+                        <li class="social4">
+                            <a href="">
+                                <img src="public/images/email_template/li.png">
+                            </a>
+                        </li>
+
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="footer_box">
+                    <p>COPYRIGHT(C) GOTOUR TICKET. ALL RIGHT RESERVED.</p>
+                    <p>(주)고투어여행사</p>
+                    <p>서울시 중구 태평로2가 69-15 502</p>
+                    <p>사업자등록번호 104-86-43305</p>
+                    <p>통신판매업신고 서울중구 제0003호</p>
+                    <p>고객센터: 02-777-0442</p>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

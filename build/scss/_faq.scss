@@ -1,0 +1,65 @@
+.box_chat_form {
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+
+    .form_row {
+        .name {
+            &.head {
+                min-width: auto;
+            }
+
+            &.content {
+                font-weight: normal;
+            }
+        }
+
+        .btn {
+            @include borderRadius(6px);
+            width: 100%;
+        }
+
+        .form_group {
+            .box_textarea {
+                width: 100%;
+                position: relative;
+
+                textarea.form_control {
+                    width: 100% !important;
+                }
+
+                .form_control {
+                    width: 100%;
+                    min-height: 100px;
+                }
+
+                .text_limit {
+                    position: absolute;
+                    bottom: 5px;
+                    right: 5px;
+                    font-size: px2em(12);
+                    color: #686868;
+                }
+            }
+
+            .noti {
+                margin-top: 2px;
+                font-size: px2em(12);
+                line-height: 16px;
+                color: #686868;
+            }
+        }
+    }
+}
+
+.no_ques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn {
+        margin-top: 20px;
+        width: 300px;
+        @include borderRadius(6px);
+    }
+}

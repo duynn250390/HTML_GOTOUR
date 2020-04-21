@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Email Tempalte</title>
+    <!-- MyStyle CSS -->
+
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+            width: 728px;
+            color: #8D8D8D;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .bg_footer {
+            background-image: url('public/images/icon/bg_footer_email.png');
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 166px;
+            width: 728px;
+        }
+
+        .list_social {
+            display: block;
+            text-align: center;
+        }
+
+        .list_social li {
+            display: inline-block;
+            list-style: none;
+            height: 54px;
+            width: 54px;
+            border: 1px solid #707070;
+            border-radius: 100%;
+            line-height: 54px;
+            margin-right: 14px;
+        }
+
+        .list_social li a {
+            display: block;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: 100%;
+        }
+
+        .list_social li a img {
+            height: 22px;
+        }
+
+        .color_a {
+            color: #3F65AE;
+            text-decoration: underline;
+        }
+
+        .title_top {
+            font-weight: 600;
+            font-size: 26px;
+            color: #4B4B4B;
+        }
+    </style>
+    <table align="center">
+        <tbody>
+            <tr>
+                <td>
+                    <h4 class="title_top">Hello</h4>
+                    <p>This is email reset password your code is: <span
+                            style="color:#8D8D8D;font-weight:600">749372</span></p>
+                    <p style="color:#8D8D8D;font-weight:600">Didn't request this change?</p>
+                    <p>If you didn't request a new password, <a href="" class="color_a">let us know.</a></p>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="bg_footer"></td>
+            </tr>
+            <tr>
+                <td>
+                    <ul class="list_social">
+                        <li class="social1">
+                            <a href="">
+                                <img src="public/images/icon/socical_f.png">
+                            </a>
+                        </li>
+                        <li class="social2">
+                            <a href="">
+                                <img src="public/images/icon/socical_g.png">
+                            </a>
+                        </li>
+                        <li class="social3">
+                            <a href="">
+                                <img src="public/images/icon/socical_l.png">
+                            </a>
+                        </li>
+                        <li class="social4">
+                            <a href="">
+                                <img src="public/images/icon/socical_a.png">
+                            </a>
+                        </li>
+
+                    </ul>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

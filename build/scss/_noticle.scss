@@ -1,0 +1,184 @@
+.control_guild {
+    .heading_tabs_sum {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        .itemm_noticle_tabs {
+            margin-right: 30px;
+            cursor: pointer;
+            position: relative;
+            font-size: px2em(16);
+
+            &::before {
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                content: '';
+                height: 0px;
+                width: 100%;
+                background-color: #F7444E;
+                display: block;
+                @include tran_slow_03();
+            }
+
+            &.on {
+                &::before {
+                    height: 2px;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.control_guild {
+    &.box_limit {
+        @include calc(max-width, '100% - 40px');
+    }
+
+    .box_seach_guid {
+        max-width: 700px;
+        margin: 0 auto;
+
+        .control_search_guid {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid $col09;
+            padding: 0.4em 0;
+            margin-bottom: 2em;
+
+            .left_control_seard {
+                flex-grow: 1;
+                outline: none;
+                padding: 0 1em;
+                height: 36px;
+                border: none;
+            }
+
+            .search_action {
+                cursor: pointer;
+                height: 36px;
+                width: 80px;
+                outline: none;
+                background: none;
+                color: $col08;
+                border: none;
+                border-left: 1px solid $col09;
+
+                @include hofo() {
+                    color: $colMain;
+                }
+            }
+        }
+    }
+}
+
+.box_list_noticle {
+    display: none;
+
+    &.on {
+        display: block;
+    }
+
+    .lists_item_hallyyo {
+        .item_hallyyo {
+            background-color: #fff;
+            padding: 10px 0;
+            padding-left: 50px;
+            padding-right: 10px;
+            position: relative;
+            min-height: 50px;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                width: 30px;
+                height: 30px;
+                background-image: url('../images/svg/horn.svg');
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: block;
+            }
+
+            .warrap_noti {
+                text-decoration: none;
+                outline: none;
+                color: #515151;
+                @include tran_slow_03();
+
+                .date {
+                    font-size: px2em(12);
+                    margin-top: 5px;
+                }
+
+                @include hofo() {
+                    color: #1f1f1f;
+                }
+            }
+        }
+    }
+
+    .lists_item_noticle {
+        .item_noticle {
+            background-color: #FFFFFF;
+            padding: 10px 0;
+            padding-right: 10px;
+            margin-bottom: 20px;
+
+            .warap_noticle {
+                text-decoration: none;
+                outline: none;
+                display: flex;
+                flex-direction: row;
+
+                .box_thumb {
+                    width: 90px;
+                    height: 90px;
+                    margin-right: 10px;
+                    // border:1px solid #e1e1e1;
+                    background-color: #FBFBFB;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        -o-object-fit: contain;
+                    }
+                }
+
+                .box_content {
+                    @include calc(width,
+                        '100% - 100px');
+                    color: #515151;
+                    font-size: px2em(14);
+
+                    .title {
+                        margin-bottom: 10px;
+                        font-weight: bold;
+                    }
+
+                    .content {
+                        margin-bottom: 5px;
+                    }
+
+                    .date {
+                        font-size: px2em(12);
+                    }
+                }
+            }
+        }
+    }
+}

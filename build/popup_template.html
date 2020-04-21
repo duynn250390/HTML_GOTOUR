@@ -1,0 +1,112 @@
+@@include('../layout/header.html')
+<style>
+    .boxlists {
+        display: flex;
+        flex-direction: column;
+        background-color: #FCFCFC;
+        padding: 30px 10px;
+    }
+
+    .boxlists .row_list.heading .item {
+        font-weight: bold;
+    }
+
+    .boxlists .row_list.heading {
+        background-color: #2699fb;
+        color: #fff;
+    }
+
+    .boxlists .row_list {
+        padding: 8px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .boxlists .row_list .item_a {
+        width: 200px;
+    }
+
+    .boxlists .row_list .item_b {
+        width: 200px;
+    }
+
+    .boxlists .row_list .item_c {
+        width: calc(100% - 400px);
+    }
+
+    .boxlists .row_list:hover,
+    .boxlists .row_list:focus {
+        background-color: #f1f1f1;
+    }
+</style>
+<aside class="content_main_father" id="content_main_father">
+    <section class="main_content reservation_paymment respoMenu">
+        <div class="container_dis">
+            <div class="boxlists">
+                <div class="row_list heading">
+                    <div class="item item_a">
+                        Action
+                    </div>
+                    <div class="item item_b">Page</div>
+                    <div class="item item_c">Description</div>
+                </div>
+                <div class="row_list ">
+                    <div class="item item_a">
+                        <button class="btn btn_primary .open_modal" data-toggle="modal"
+                            data-target="#modal_hidden_01">Show</button>
+                    </div>
+                    <div class="item item_b">find-password.html</div>
+                    <div class="item item_c">Thong bao khi he thong kiem tra khong co email hoac id</div>
+                </div>
+                <div class="row_list ">
+                    <div class="item item_a">
+                        <button class="btn btn_primary open_modal" data-toggle="modal" data-target="#modal_hidden_02">Show</button>
+                    </div>
+                    <div class="item item_b">find-password.html</div>
+                    <div class="item item_c">Thong bao check send email khi email co ton tai trong he thong</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</aside>
+
+<aside class="sum_modal">
+    <!-- <button class="open_modal" data-toggle="modal" data-target="#modal_hidden_01">회원탈퇴
+        요청</button> -->
+    <div class="modal fade" id="modal_hidden_01" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal_dialog modal_dialog_centered cancel_regis_member" role="document">
+            <div class="modal_content">
+                <div class="modal_header">
+                    <button class="btn btn_close" data-dismiss="modal"></button>
+                </div>
+                <div class="modal_body">
+                    ID를 찾을 수가 없습니다.<br />
+                    회원가입을 해주세요.
+                </div>
+                <div class="modal_footer center">
+                    <button class="btn btn_light">취소</button>
+                    <button class="btn btn_primary">전송</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_hidden_02" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal_dialog modal_dialog_centered cancel_regis_member send_mail_check" role="document">
+            <div class="modal_content">
+                <div class="modal_header">
+                    <button class="btn btn_close" data-dismiss="modal"></button>
+                </div>
+                <div class="modal_body">
+                    <span class="email"></span>
+                    <br>코드가 발송되었습니다.<br>
+                    메일을 확인해 주세요</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+@@include('../layout/footer.html')
